@@ -1,0 +1,285 @@
+body, html, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/***************************标签页 靠左*****************************/
+.codyy-tab {
+    &-wrapper {
+        width: 921px;
+        background: #ffffff;
+    }
+    &-top {
+        width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        height: 57px;
+        line-height: 57px;
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 16px;
+        color: #666666;
+        position: relative;
+        margin-bottom: 40px;
+        &-bottom {
+            position: absolute;
+            height: 2px;
+            background: #09ca51;
+            width: 64px;
+            bottom: 0;
+            left: 0;
+            transform: translate3d(20px, 0px, 0px);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        }
+        &:after {
+            content: '.';
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+        li {
+            float: left;
+            padding: 0 20px;
+            cursor: pointer;
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            a {
+                display: block;
+                text-decoration: none;
+                color: #666666;
+                font-size: 16px;
+                &:hover {
+                    color: #09ca51;
+                }
+            }
+            &:hover {
+                color: #09ca51;
+            }
+        }
+        .tab-active {
+            color: #09ca51 !important;
+            a {
+                color: #09ca51 !important;
+            }
+        }
+    }
+    &-contents {
+        width: 921px;
+        height: 100%;
+        overflow: hidden;
+        &:after {
+            content: '.';
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+        .contents-tenter {
+            transition: all .7s;
+        }
+    }
+    &-content {
+        //position: absolute;
+        float: left;
+        width: 921px;
+    }
+    &-content-active {
+        transform: translate3d(0px, 0px, 0px);
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        opacity: 1;
+        display: block;
+    }
+    &-content-inactive {
+        transform: translate3d(921px, 0px, 0px);
+        opacity: 0;
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        display: none;
+    }
+}
+
+/***********************************标签页居中*******************************************/
+
+.codyy-tab-center {
+    &-wrapper {
+        width: 100%;
+    }
+    &-top {
+        height: 60px;
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        margin-bottom: 20px;
+        background: #ffffff;
+        ul {
+            position: relative;
+            &:after {
+                content: '.';
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                clear: both;
+                display: block;
+            }
+            li {
+                float: left;
+                font-size: 16px;
+                height: 16px;
+                line-height: 16px;
+                color: #666666;
+                padding: 0 64px;
+                cursor: pointer;
+                margin-top: 21px;
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                &:hover {
+                    color: #09ca51;
+                }
+            }
+            .active {
+                color: #09ca51;
+            }
+        }
+    }
+    &-bottom {
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background: #09ca51;
+        bottom: 10px;
+        left: 0;
+        transform: translate3d(63px, 0px, 0px);
+        transition: all .4s cubic-bezier(.645, .045, .355, 1);
+    }
+    &-contents {
+        overflow: hidden;
+        height: 100%;
+        width: 1200px;
+        margin: 0 auto;
+        .center-contents {
+            transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        }
+    }
+    &-content {
+        width: 1200px;
+        float: left;
+    }
+    &-active {
+        transform: translate3d(0px, 0px, 0px);
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        opacity: 1;
+        display: block;
+    }
+    &-inactive {
+        transform: translate3d(1200px, 0px, 0px);
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        opacity: 0;
+        display: none;
+    }
+}
+
+/******************************数字风格的***********************************/
+.codyy-tab-number {
+    &-wrapper {
+        width: 1200px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    &-top {
+        position: relative;
+        height: 67px;
+        border-bottom: 2px solid #f2f2f2;
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        background: #ffffff;
+        ul {
+            &:after {
+                content: '.';
+                display: block;
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                clear: both;
+            }
+            li {
+                float: left;
+                font-size: 16px;
+                color: #999999;
+                width: 184px;
+                text-align: center;
+                margin-top: 30px;
+                cursor: pointer;
+                transition: all .4s cubic-bezier(.645, .045, .355, 1);
+                span {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    border-radius: 100%;
+                    color: #ffffff;
+                    background: #999999;
+                    margin-right: 8px;
+                    transition: all .4s cubic-bezier(.645, .045, .355, 1);
+                }
+            }
+            .active {
+                color: #09ca51;
+                span {
+                    background: #09ca51;
+                }
+            }
+        }
+    }
+    &-bottom {
+        position: absolute;
+        width: 185px;
+        height: 2px;
+        background: #09ca51;
+        bottom: -2px;
+        left: 0;
+        transition: all .4s cubic-bezier(.645, .045, .355, 1);
+    }
+    &-contents {
+        overflow: hidden;
+        &:after {
+            content: '.';
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+            display: block;
+        }
+        .number-contents {
+            transition: all .7s cubic-bezier(.645, .045, .355, 1);
+            &:after {
+                content: '.';
+                display: block;
+                widows: 0;
+                height: 0;
+                visibility: hidden;
+                clear: both;
+            }
+        }
+    }
+    &-content {
+        float: left;
+        width: 1160px;
+    }
+    &-active {
+        transform: translate3d(0px, 0px, 0px);
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        opacity: 1;
+        display: block;
+    }
+    &-inactive {
+        transform: translate3d(1160px, 0px, 0px);
+        transition: all .7s cubic-bezier(.645, .045, .355, 1);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
