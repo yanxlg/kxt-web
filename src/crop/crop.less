@@ -1,0 +1,33 @@
+/**
+ * @Author: yanxinaliang (rainyxlxl@163.com)
+ * @Date: 2018/10/11 11:29
+ * @Last Modified by: yanxinaliang (rainyxlxl@163.com)
+ * * @Last Modified time: 2018/10/11 11:29
+ * @disc:$DESC$
+ */
+.cropper-line,.cropper-point{
+  background-color: #09ca51!important;
+}
+.cropper-view-box{
+    outline: #09ca51 solid 1px!important;
+}
+.cropper-crop-circle{
+    ~ .cropper-container{
+        .cropper-face{
+            overflow: hidden;
+            opacity: 0.5;
+            &:before{
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                box-sizing: content-box;
+                border-radius: 100%;
+                border: 400px solid #000;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}

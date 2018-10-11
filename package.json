@@ -1,6 +1,6 @@
 {
   "name": "kxt-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "dist"
   ],
   "dependencies": {
-  
+    "cropperjs": "^1.4.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -73,6 +73,9 @@
     "babel-plugin-transform-decorators":"^6.24.1",
     "babel-plugin-transform-import": "^1.5.4",
     "babel-plugin-import":"^1.9.1"
+  },
+  "config": {
+    "port": 8002
   },
   "bugs": {
     "url": "https://github.com/yanxlg/kxt-web/issues"
