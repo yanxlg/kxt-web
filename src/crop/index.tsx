@@ -28,6 +28,17 @@ class ImageCrop extends React.Component<IImageCropProps>{
             viewMode:'free' as any
         },this.props))
     }
+    componentWillReceiveProps(nextProps:any){
+        // 属性变化，重新创建
+        this.image.src=nextProps.src;
+        this.cropper.destroy();
+        this.cropper=new Cropper(this.image,Object.assign({
+            responsive:true,
+            aspectRatio:1,
+            dragMode:'move' as any,
+            viewMode:'free' as any
+        },nextProps));
+    }
     public clear(){
         this.cropper.clear();
         return this;
