@@ -15,7 +15,8 @@
     ~ .cropper-container{
         .cropper-face{
             overflow: hidden;
-            opacity: 0.5;
+            opacity: 1;
+            background-color: transparent;
             &:before{
                 content:"";
                 position: absolute;
@@ -23,7 +24,7 @@
                 height: 100%;
                 box-sizing: content-box;
                 border-radius: 100%;
-                border: 400px solid #000;
+                border: 400px solid rgba(0,0,0,0.5);
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%,-50%);
