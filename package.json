@@ -1,6 +1,6 @@
 {
   "name": "kxt-web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "repository": {
     "type": "git",
@@ -32,7 +32,13 @@
     "dist"
   ],
   "dependencies": {
-    "cropperjs": "^1.4.1"
+    "cropperjs": "^1.4.1",
+    "chimee":"^0.11.0",
+    "chimee-kernel-flv":"^1.4.10",
+    "chimee-plugin-popup":"^0.0.7",
+    "chimee-plugin-controlbar":"^0.5.0",
+    "chimee-plugin-center-state":"^0.0.11",
+    "chimee-plugin-contextmenu":"^0.1.2"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -72,13 +78,7 @@
     "babel-plugin-syntax-dynamic-import":"^6.18.0",
     "babel-plugin-transform-decorators":"^6.24.1",
     "babel-plugin-transform-import": "^1.5.4",
-    "babel-plugin-import":"^1.9.1",
-    "chimee":"^0.11.0",
-    "chimee-kernel-flv":"^1.4.10",
-    "chimee-plugin-popup":"^0.0.7",
-    "chimee-plugin-controlbar":"^0.5.0",
-    "chimee-plugin-center-state":"^0.0.11",
-    "chimee-plugin-contextmenu":"^0.1.2"
+    "babel-plugin-import":"^1.9.1"
   },
   "config": {
     "port": 8002
