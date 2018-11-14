@@ -86,4 +86,4 @@ class Loading{
         }
     }
 }
-export {Loading};
+export default Loading;

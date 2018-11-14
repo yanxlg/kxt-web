@@ -3,4 +3,4 @@ declare interface ConnectOptions{
     pure?:boolean
 }
 
-export function connect(mapStateToProps: (state:any,ownProps?:any)=>any,mapDispatchToProps?:any,mergeProps?:any,options?:ConnectOptions):any;
+export default function connect(mapStateToProps: (state:any,ownProps?:any)=>any,mapDispatchToProps?:any,mergeProps?:any,options?:ConnectOptions):any;
