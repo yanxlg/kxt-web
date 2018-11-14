@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/connect/index.d.ts" afterPath="$PROJECT_DIR$/src/connect/index.d.ts" />
       <change beforePath="$PROJECT_DIR$/src/connect/index.js" afterPath="$PROJECT_DIR$/src/connect/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" afterPath="$PROJECT_DIR$/src/index.ts" />
-      <change beforePath="$PROJECT_DIR$/src/loading/index.ts" afterPath="$PROJECT_DIR$/src/loading/index.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -106,8 +102,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/connect/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="38">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,8 +112,8 @@
       <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/connect/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="95">
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -179,10 +175,10 @@
         <option value="$PROJECT_DIR$/src/player/index.tsx" />
         <option value="$PROJECT_DIR$/src/loading/loading.less" />
         <option value="$PROJECT_DIR$/src/connect/index.ts" />
-        <option value="$PROJECT_DIR$/src/connect/index.js" />
         <option value="$PROJECT_DIR$/src/connect/index.d.ts" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/loading/index.ts" />
+        <option value="$PROJECT_DIR$/src/connect/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -328,15 +324,16 @@
       <workItem from="1541143480831" duration="8444000" />
       <workItem from="1541731805341" duration="735000" />
       <workItem from="1542009359844" duration="3276000" />
-      <workItem from="1542162593717" duration="194000" />
+      <workItem from="1542162593717" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35631000" />
+    <option name="totallyTimeSpent" value="35942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6630786" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
@@ -765,16 +762,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/connect/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="95">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/connect/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="38">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
