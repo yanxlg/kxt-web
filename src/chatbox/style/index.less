@@ -6,7 +6,6 @@
 
 @sizeRatio:1rem/40px;// 外部覆盖 less-loader  modifyVars
 
-@bgColor:rgba(0,0,0,0.3);
 @height:48px;
 @padding:0 5px*@sizeRatio;
 @emotionIconSize:28px;
@@ -53,7 +52,6 @@
     width: 100%;
     left: 0;
     box-sizing: border-box;
-    background-color: @bgColor;
     padding: @padding;
     &-disabled{
         pointer-events: none;
@@ -70,7 +68,7 @@
         &:hover{
             background-image: url("../icon/emotion_hover.png");
         }
-        &:active,&.codyy-chatroom-active{
+        &:active{
             background-image: url("../icon/emotion_active.png");
         }
         &-container{
