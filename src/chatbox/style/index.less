@@ -1,0 +1,197 @@
+/**
+  * @disc:聊天输入框
+  * @author:yanxinaliang
+  * @time：2018/4/10 9:16
+  */
+
+@sizeRatio:1rem/40px;// 外部覆盖 less-loader  modifyVars
+
+@bgColor:rgba(0,0,0,0.3);
+@height:48px;
+@padding:0 5px*@sizeRatio;
+@emotionIconSize:28px;
+@inputBorderColor:#999999;
+@inputBorderSize:1px;
+@inputBorderActiveColor:#09ca51;
+
+@inputSpacing:5px;
+@inputHeight:40px;
+@inputPadding:2px*@sizeRatio 4px*@sizeRatio;
+@inputColor:#666666;
+@inputFontSize:14px;
+@inputBgColor:#fff;
+@smallIconSize:20px;
+
+
+@sendWidth:34px;
+@sendHeight:34px;
+@sendFontSize:14px;
+@sendColor:#fff;
+@sendBgColor:#4c84ff;
+@sendRadius:999px;
+
+
+@emotionBoxBorder:1px;
+@emotionBoxWidth:288px;
+@emotionBoxHeight:240px;
+@emotionBgColor:#fff;
+@emotionBoxBorderColor:#dcdcdc;
+@emotionBarHeight:32px;
+@emotionBarBgColor:#F3F3F4;
+@emotionBarItemWidth:54px;
+@emotionBarItemActiveBgColor:#fff;
+
+
+@emotionSmallSize:32px;
+
+@_left:5px;
+
+.chatbox{
+    height:@height*@sizeRatio;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    background-color: @bgColor;
+    padding: @padding;
+    &-disabled{
+        pointer-events: none;
+    }
+    &-emotion{
+        width: @emotionIconSize*@sizeRatio;
+        height: @emotionIconSize*@sizeRatio;
+        background: url("../icon/emotion.png") no-repeat center;
+        background-size: cover;
+        position: absolute;
+        left:@_left*@sizeRatio;
+        top:(@height - @emotionIconSize)/2*@sizeRatio;
+        cursor: pointer;
+        &:hover{
+            background-image: url("../icon/emotion_hover.png");
+        }
+        &:active,&.codyy-chatroom-active{
+            background-image: url("../icon/emotion_active.png");
+        }
+        &-container{
+            position: absolute;
+            bottom: @height*@sizeRatio;
+            border: @emotionBoxBorder*@sizeRatio solid @emotionBoxBorderColor;
+            width: @emotionBoxWidth*@sizeRatio;
+            height: @emotionBoxHeight*@sizeRatio;
+            left: @_left*@sizeRatio;
+            background: @emotionBgColor;
+            box-sizing: content-box;
+            &-packs{
+                position: absolute;
+                bottom: 0;
+                height: @emotionBarHeight*@sizeRatio;
+                background: @emotionBarBgColor;
+                width: 100%;
+                white-space: nowrap;
+                li{
+                    width: @emotionBarItemWidth*@sizeRatio;
+                    height: @emotionBarHeight*@sizeRatio;
+                    display: inline-block;
+                    text-align: center;
+                    position: relative;
+                    float: left;
+                    img{
+                        position: absolute;
+                        left: (@emotionBarItemWidth - @smallIconSize)/2*@sizeRatio;
+                        top: (@emotionBarHeight - @smallIconSize)/2*@sizeRatio;
+                        width: @smallIconSize*@sizeRatio;
+                        height: @smallIconSize*@sizeRatio;
+                    }
+                    &.active{
+                        background: @emotionBarItemActiveBgColor;
+                    }
+                }
+            }
+            &:after{
+                display: block;
+                width: 0;
+                height: 0;
+                border-right: 12px*@sizeRatio solid transparent;
+                content: "";
+                position: absolute;
+                bottom: -13px*@sizeRatio;
+                left: 14px*@sizeRatio;
+                border-top: 12px*@sizeRatio solid #f3f3f4;
+            }
+        }
+        &-small{
+            width: @emotionSmallSize*@sizeRatio;
+            height: @emotionSmallSize*@sizeRatio;
+            float: left;
+            cursor: default;
+            text-align: center;
+            line-height: @emotionSmallSize*@sizeRatio;
+            position: relative;
+            img{
+                position: absolute;
+                left: (@emotionSmallSize - @smallIconSize)/2*@sizeRatio;
+                top: (@emotionSmallSize - @smallIconSize)/2*@sizeRatio;
+                width: @smallIconSize*@sizeRatio;
+                height: @smallIconSize*@sizeRatio;
+            }
+            &:after{
+                clear: both;
+            }
+            &:hover{
+                background: #F3F3F4;
+            }
+            &:active{
+                background: #F3F3F4;
+            }
+        }
+    }
+    &-input{
+        position: absolute;
+        left:(@_left + @emotionIconSize + @inputSpacing)*@sizeRatio;
+        height: @inputHeight*@sizeRatio!important;
+        top: (@height - @inputHeight)/2*@sizeRatio;
+        right: (@sendWidth + @_left + @inputSpacing)*@sizeRatio;
+        outline: none;
+        box-sizing: border-box;
+        input{
+            display: block;
+            width: 100%!important;
+            height: @inputHeight*@sizeRatio!important;
+            padding: @inputPadding;
+            color: @inputColor;
+            font-size: @inputFontSize*@sizeRatio;
+            line-height: @inputHeight*@sizeRatio;
+            border: @inputBorderSize*@sizeRatio solid @inputBorderColor;
+            &:focus{
+                border-color: @inputBorderActiveColor;
+            }
+        }
+        background: @inputBgColor;
+        white-space: nowrap;
+        overflow: hidden;
+        &-icon{
+            width: @smallIconSize*@sizeRatio;
+            height: @smallIconSize*@sizeRatio;
+            margin: 0 1px;
+            position: relative;
+            top: 5px*@sizeRatio;
+        }
+    }
+    &-send{
+        width: @sendWidth*@sizeRatio;
+        height: @sendHeight*@sizeRatio;
+        font-size: @sendFontSize*@sizeRatio;
+        color: @sendColor;
+        box-sizing: border-box;
+        position: absolute;
+        right: @_left*@sizeRatio;
+        top: ((@height - @sendHeight)/2)*@sizeRatio;
+        background: @sendBgColor;
+        border: none;
+        outline: none;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: @sendRadius*@sizeRatio;
+    }
+}
