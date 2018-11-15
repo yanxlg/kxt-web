@@ -2,65 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/config.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/亲亲.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/便便.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/偷笑.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/傲慢.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/再见.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/发怒.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/可爱.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/吐.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/嘘.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/大哭.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/委屈.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/害羞.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/尴尬.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/得意.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/微笑.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/心.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/心裂.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/惊恐.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/惊讶.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/憨笑.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/抓狂.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/抠鼻.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/撇嘴.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/擦汗.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/敲打.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/汗.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/流泪.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/炸弹.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/猪头.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/疑问.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/白眼.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/睡.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/示爱.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/耍酷.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/胜利.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/色.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/花.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/菜刀.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/衰.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/调皮.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/鄙视.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/酷.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/阴险.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/难过.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/龇牙.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/icon/emotion.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/icon/emotion_active.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/icon/emotion_hover.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/index.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/scrollbar.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/shell.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/style/index.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/chatbox/style/index.ts" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" afterPath="$PROJECT_DIR$/src/index.ts" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,8 +19,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="38">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -406,12 +348,12 @@
       <workItem from="1542009359844" duration="3276000" />
       <workItem from="1542162593717" duration="530000" />
       <workItem from="1542176546928" duration="128000" />
-      <workItem from="1542257159737" duration="2588000" />
+      <workItem from="1542257159737" duration="2721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38683000" />
+    <option name="totallyTimeSpent" value="38816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -422,7 +364,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45748118" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45748118" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2793177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -867,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        <state relative-caret-position="38">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
