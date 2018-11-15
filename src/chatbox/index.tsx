@@ -85,6 +85,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
         document.removeEventListener("click",this.elEvent);
     }
     private contains=(root:Node,el:any)=>{
+        if(!root) return false;
         if (root.compareDocumentPosition)
             return root === el || !!(root.compareDocumentPosition(el) & 16);
         if (root.contains && el.nodeType === 1){
