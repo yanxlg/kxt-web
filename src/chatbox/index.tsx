@@ -114,6 +114,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
     private sendMessage=()=> {
         const {onSend} = this.props;
         const show = onSend.call(this, this.getContent());
+        this.clear();
         if (show === true) {
             this.showPopover();
         }
