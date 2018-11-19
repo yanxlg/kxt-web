@@ -31,6 +31,8 @@ export declare interface ChatBoxProps{
     renderSendBtn?:JSX.Element;
     renderEmotion?:JSX.Element;
     popoverContent?:string;
+    disable?:boolean;
+    placeholder?:string;
 }
 
 
@@ -80,6 +82,12 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
     private timer:any;
     componentDidMount(){
         document.addEventListener("click",this.elEvent);
+        const {disable} = this.props;
+        if(disable){
+            this.setDisabled();
+        }else{
+            this.setEnabled();
+        }
     }
     componentWillUnmount(){
         document.removeEventListener("click",this.elEvent);
@@ -164,8 +172,8 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
         e.nativeEvent.stopImmediatePropagation();
         window.event?e.cancelBubble=true:e.stopPropagation();
     };
-    public setDisabled=(placeholder?:string)=>{
-        //设置为不可用
+    private setDisabled=()=>{
+        const {placeholder} = this.props;
         this.chatRoomInput.setAttribute("placeholder",placeholder||"");
         this.chatRoomInput.setAttribute("disabled",true);
         this.chatRoomInput.value = '';
@@ -174,8 +182,8 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
             showEmotion:false
         })
     };
-    public setEnabled=(placeholder?:string)=>{
-        this.chatRoomInput.setAttribute("placeholder",placeholder||"");
+    private setEnabled=()=>{
+        this.chatRoomInput.setAttribute("placeholder","");
         this.chatRoomInput.removeAttribute("disabled");
         this.setState({
             enable:true,
@@ -198,6 +206,17 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
             popover:true,
         });
     };
+    componentWillReceiveProps(nextProps:ChatBoxProps){
+        const prevDisable=this.props.disable;
+        const nextDisable = nextProps.disable;
+        if(prevDisable!==nextDisable){
+            if(nextDisable){
+                this.setDisabled();
+            }else{
+                this.setEnabled();
+            }
+        }
+    }
     render(){
         const emotion_active=emotions[this.state.active]||{};
         const {renderSendBtn,renderEmotion,popoverContent}=this.props;
