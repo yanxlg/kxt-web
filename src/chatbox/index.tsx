@@ -130,7 +130,11 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
     private handKeyDown=(e:any)=>{
         if(e.keyCode===13) {
             const {onSend} = this.props;
-            onSend.call(this, this.getContent());
+            const show = onSend.call(this, this.getContent());
+            this.clear();
+            if (show === true) {
+                this.showPopover();
+            }
         }
     };
     private insertAtRange=(content:string,path:string,type:string)=>{
