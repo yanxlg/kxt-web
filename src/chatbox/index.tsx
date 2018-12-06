@@ -105,7 +105,9 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
     };
     private elEvent=(e:any)=>{
         const target:any=e.target||window.event.srcElement;
-        if(this.contains(this.emotionContainer,target)||target.className.indexOf("chatbox-emotion")>-1){
+        if(!target) return;
+        const {className=""} = target;
+        if(this.contains(this.emotionContainer,target)||className.indexOf("chatbox-emotion")>-1){
         
         }else{
             this.setState({
