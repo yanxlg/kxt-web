@@ -66,13 +66,10 @@ export default function(i) {
     if (e.pointerType && e.pointerType === 'pen' && e.buttons === 0) {
       return false;
     }
-    // support touches
-      if (e.targetTouches && e.targetTouches.length >= 1) {
-          return true;
-      }
-/*    if (e.targetTouches && e.targetTouches.length === 1) {
+    // 多指无法判断对应关系
+    if (e.targetTouches && e.targetTouches.length === 1) {
       return true;
-    }*/
+    }
     if (
       e.pointerType &&
       e.pointerType !== 'mouse' &&
