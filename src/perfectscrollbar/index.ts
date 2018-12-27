@@ -1,4 +1,5 @@
-const _PerfectScrollbar = require("./index.lib.js").default;
+// @ts-ignore
+import {PerfectScrollbar as _PerfectScrollbar} from "./index.lib.js";
 
 export type handler = 'click-rail'|'drag-thumb'|'keyboard'|'wheel'|'touch';
 
