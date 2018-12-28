@@ -1,4 +1,4 @@
-import React, {MouseEventHandler, createElement} from 'react';
+import React, {MouseEventHandler, createElement, CSSProperties} from 'react';
 import ReactDom from 'react-dom';
 // @ts-ignore
 import {default as _PerfectScrollbar} from './index.lib.js';
@@ -39,7 +39,7 @@ declare namespace PerfectScrollbar{
         useBothWheelAxes?: boolean;
         wheelPropagation?: boolean;
         wheelSpeed?: number;
-        style?: CSSStyleDeclaration;
+        style?: CSSProperties;
         className?: string;
         onClick?: MouseEventHandler;
         onMouseDown?: MouseEventHandler;
