@@ -87,7 +87,8 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
         this.update();
     }
     
-    componentDidMount(): void {
+    @Bind
+    private getUserSetting(){
         const {
             handlers,
             maxScrollbarLength,
@@ -102,9 +103,7 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
             wheelPropagation,
             wheelSpeed,
         } = this.props;
-        this.container = ReactDom.findDOMNode(this) as HTMLElement;
-        this.container.addEventListener("scroll",this.handleScroll);
-        this.scrollbar = new _PerfectScrollbar(this.container, {
+        const setting = {
             handlers,
             maxScrollbarLength,
             minScrollbarLength,
@@ -116,8 +115,23 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
             swipeEasing,
             useBothWheelAxes,
             wheelPropagation,
-            wheelSpeed,
-        }) as any;
+            wheelSpeed
+        };
+        let userSetting:any={};
+        for (const key in setting) {
+            if(void 0 !== setting[key]){
+                userSetting[key] = setting[key];
+            }
+        }
+        return userSetting;
+    }
+    
+    componentDidMount(): void {
+        this.container = ReactDom.findDOMNode(this) as HTMLElement;
+        this.container.addEventListener("scroll",this.handleScroll);
+        
+        
+        this.scrollbar = new _PerfectScrollbar(this.container, this.getUserSetting()) as any;
         this.horizonSpringSystem = new SpringSystem();
         this.verticalSpringSystem = new SpringSystem();
         this.horizonSpring = this.horizonSpringSystem.createSpring();
@@ -160,11 +174,11 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
     public scrollLeft(left: number, animation?: boolean) {
         if (!this.container) return;
         if (animation) {
-            const {scrollLeft, scrollWidth} = this.container;
-            const val = MathUtil.mapValueInRange(left, 0, scrollWidth,
-                scrollWidth * 0.2, scrollWidth * 0.8);
+            const {scrollLeft} = this.container;
+            // const val = MathUtil.mapValueInRange(left, 0, scrollWidth,
+            //     scrollWidth * 0.2, scrollWidth * 0.8);
             this.verticalSpring.setCurrentValue(scrollLeft).setAtRest();
-            this.verticalSpring.setEndValue(val);
+            this.verticalSpring.setEndValue(left);
         } else {
             this.container.scrollLeft = left;
         }
@@ -174,11 +188,11 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
     public scrollTop(top: number, animation?: boolean) {
         if (!this.container) return;
         if (animation) {
-            const {scrollTop, scrollHeight} = this.container;
-            const val = MathUtil.mapValueInRange(top, 0, scrollHeight,
-                scrollHeight * 0.2, scrollHeight * 0.8);
+            const {scrollTop} = this.container;
+            // const val = MathUtil.mapValueInRange(top, 0, scrollHeight,
+            //     scrollHeight * 0.2, scrollHeight * 0.8);
             this.verticalSpring.setCurrentValue(scrollTop).setAtRest();
-            this.verticalSpring.setEndValue(val);
+            this.verticalSpring.setEndValue(top);
         } else {
             this.container.scrollTop = top;
         }
