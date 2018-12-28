@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
+            <state relative-caret-position="406">
               <caret line="47" column="16" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="16" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
@@ -59,11 +59,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+            <state relative-caret-position="19">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="e#12#89#0" expanded="true" />
                 <element signature="e#213#268#0" expanded="true" />
+                <element signature="n#PerfectScrollbarFactory#0" />
+                <element signature="n#!!block;n#constructor#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollLeft#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollTop#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollToLeft#0;n#PerfectScrollbarFactory#0" />
@@ -161,9 +163,9 @@
       <find>CSSStyleDeclaration</find>
       <find>HTMLDI</find>
       <find>style</find>
-      <find>defaultSettings</find>
       <find>handleHorizonSpringUpdate</find>
       <find>handleScroll</find>
+      <find>defaultSettings</find>
       <find>handleWindowResize</find>
     </findStrings>
     <replaceStrings>
@@ -347,12 +349,12 @@
       <workItem from="1545969033627" duration="492000" />
       <workItem from="1545969731813" duration="205000" />
       <workItem from="1545971570084" duration="402000" />
-      <workItem from="1545974320735" duration="4651000" />
+      <workItem from="1545974320735" duration="5872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68870000" />
+    <option name="totallyTimeSpent" value="70091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -372,7 +374,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Code Review" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" weight="0.5718884" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" visible="true" weight="0.5718884" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" weight="0.6630786" />
       <window_info anchor="bottom" id="Compute Code Lines" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -686,7 +688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="406">
           <caret line="47" column="16" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="16" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
@@ -697,11 +699,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+        <state relative-caret-position="19">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#12#89#0" expanded="true" />
             <element signature="e#213#268#0" expanded="true" />
+            <element signature="n#PerfectScrollbarFactory#0" />
+            <element signature="n#!!block;n#constructor#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollLeft#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollTop#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollToLeft#0;n#PerfectScrollbarFactory#0" />

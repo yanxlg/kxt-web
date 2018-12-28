@@ -23,36 +23,34 @@ export type handler =
     | 'wheel'
     | 'touch';
 
-declare namespace PerfectScrollbar{
-    export interface FactoryOptions {
-        handlers?: handler[];
-        maxScrollbarLength?: number;
-        minScrollbarLength?: number;
-        scrollingThreshold?: number;
-        scrollXMarginOffset?: number;
-        scrollYMarginOffset?: number;
-        suppressScrollX?: boolean;
-        suppressScrollY?: boolean;
-        swipeEasing?: boolean;
-        useBothWheelAxes?: boolean;
-        wheelPropagation?: boolean;
-        wheelSpeed?: number;
-    }
-    export interface Options extends FactoryOptions{
-        style?:CSSProperties;
-        className?: string;
-        onClick?: MouseEventHandler;
-        onMouseDown?: MouseEventHandler;
-        onMouseEnter?: MouseEventHandler;
-        onMouseLeave?: MouseEventHandler;
-        onMouseMove?: MouseEventHandler;
-        onMouseOut?: MouseEventHandler;
-        onMouseOver?: MouseEventHandler;
-        onMouseUp?: MouseEventHandler;
-        containerRef?: (ref: HTMLElement) => void;
-        tagName?: string;
-        autoHide?:boolean;
-    }
+export interface IScrollFactoryOptions {
+    handlers?: handler[];
+    maxScrollbarLength?: number;
+    minScrollbarLength?: number;
+    scrollingThreshold?: number;
+    scrollXMarginOffset?: number;
+    scrollYMarginOffset?: number;
+    suppressScrollX?: boolean;
+    suppressScrollY?: boolean;
+    swipeEasing?: boolean;
+    useBothWheelAxes?: boolean;
+    wheelPropagation?: boolean;
+    wheelSpeed?: number;
+}
+export interface IScrollOptions extends IScrollFactoryOptions{
+    style?:CSSProperties;
+    className?: string;
+    onClick?: MouseEventHandler;
+    onMouseDown?: MouseEventHandler;
+    onMouseEnter?: MouseEventHandler;
+    onMouseLeave?: MouseEventHandler;
+    onMouseMove?: MouseEventHandler;
+    onMouseOut?: MouseEventHandler;
+    onMouseOver?: MouseEventHandler;
+    onMouseUp?: MouseEventHandler;
+    containerRef?: (ref: HTMLElement) => void;
+    tagName?: string;
+    autoHide?:boolean;
 }
 
 
@@ -62,7 +60,7 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
     private horizonSpring: Spring;
     private verticalSpring: Spring;
     
-    constructor(element: string | HTMLElement,setting: PerfectScrollbar.FactoryOptions){
+    constructor(element: string | HTMLElement,setting: IScrollFactoryOptions){
         super(element,setting);
         this.horizonSpringSystem = new SpringSystem();
         this.verticalSpringSystem = new SpringSystem();
@@ -194,7 +192,7 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
 export {PerfectScrollbarFactory};
 
 
-export default class PerfectScrollbar extends React.Component<PerfectScrollbar.Options> {
+export default class PerfectScrollbar extends React.Component<IScrollOptions> {
     private scrollbar: PerfectScrollbarFactory;
     private container: HTMLElement;
     
@@ -287,7 +285,7 @@ export default class PerfectScrollbar extends React.Component<PerfectScrollbar.O
     }
     
     componentDidUpdate(
-        prevProps: Readonly<PerfectScrollbar.Options>, prevState: Readonly<{}>,
+        prevProps: Readonly<IScrollOptions>, prevState: Readonly<{}>,
         snapshot?: any): void {
         this.update();
     }
