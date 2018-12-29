@@ -5,6 +5,7 @@ export default function(i) {
 
   i.event.bind(i.scrollbarY, 'mousedown', e => e.stopPropagation());
   i.event.bind(i.scrollbarYRail, 'mousedown', e => {
+    if (i.disabled) return;
     const positionTop =
       e.pageY -
       window.pageYOffset -
@@ -19,6 +20,7 @@ export default function(i) {
 
   i.event.bind(i.scrollbarX, 'mousedown', e => e.stopPropagation());
   i.event.bind(i.scrollbarXRail, 'mousedown', e => {
+    if (i.disabled) return;
     const positionLeft =
       e.pageX -
       window.pageXOffset -

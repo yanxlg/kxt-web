@@ -8,8 +8,7 @@ import React, {MouseEventHandler, createElement, CSSProperties} from 'react';
 import ReactDom from 'react-dom';
 // @ts-ignore
 import {default as _PerfectScrollbar} from './index.lib.js';
-// @ts-ignore
-import {SpringSystem, MathUtil, Spring} from 'rebound';
+import {SpringSystem, Spring} from 'rebound';
 import {Bind,Throttle,Debounce} from "lodash-decorators";
 
 import "./css/style.less";
@@ -36,6 +35,7 @@ export interface IScrollFactoryOptions {
     useBothWheelAxes?: boolean;
     wheelPropagation?: boolean;
     wheelSpeed?: number;
+    disabled?:boolean;
 }
 export interface IScrollOptions extends IScrollFactoryOptions{
     style?:CSSProperties;
@@ -59,9 +59,22 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
     private verticalSpringSystem: SpringSystem;
     private horizonSpring: Spring;
     private verticalSpring: Spring;
-    
-    constructor(element: string | HTMLElement,setting: IScrollFactoryOptions){
+    private _disabled:boolean;
+    public get disabled(): boolean {
+        return this._disabled;
+    }
+    public set disabled(value: boolean) {
+        this._disabled = value;
+        // 隐藏滚动条
+        if(value){
+            this.element.classList.add("ps-scroll-disable");
+        }else{
+            this.element.classList.remove("ps-scroll-disable");
+        }
+    }
+    constructor(element:HTMLElement,setting: IScrollFactoryOptions){
         super(element,setting);
+        this.disabled=setting.disabled;
         this.horizonSpringSystem = new SpringSystem();
         this.verticalSpringSystem = new SpringSystem();
         this.horizonSpring = this.horizonSpringSystem.createSpring();
@@ -211,6 +224,7 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
             useBothWheelAxes,
             wheelPropagation,
             wheelSpeed,
+            disabled
         } = this.props;
         const setting = {
             handlers,
@@ -224,7 +238,8 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
             swipeEasing,
             useBothWheelAxes,
             wheelPropagation,
-            wheelSpeed
+            wheelSpeed,
+            disabled
         };
         let userSetting:any={};
         for (const key in setting) {
@@ -288,6 +303,8 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
         prevProps: Readonly<IScrollOptions>, prevState: Readonly<{}>,
         snapshot?: any): void {
         this.update();
+        const {disabled} = this.props;
+        this.scrollbar.disabled=disabled;
     }
     
     render() {

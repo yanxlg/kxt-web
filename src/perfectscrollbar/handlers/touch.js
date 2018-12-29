@@ -61,13 +61,22 @@ export default function(i) {
       return e;
     }
   }
+  
+  function getTouches(e) {
+    if (e.targetTouches) {
+      return e.targetTouches;
+    } else {
+      // Maybe IE pointer
+      return [e];
+    }
+  }
 
   function shouldHandle(e) {
     if (e.pointerType && e.pointerType === 'pen' && e.buttons === 0) {
       return false;
     }
     // 多指无法判断对应关系
-    if (e.targetTouches && e.targetTouches.length === 1) {
+    if (e.targetTouches && e.targetTouches.length >= 1) {
       return true;
     }
     if (
@@ -85,10 +94,20 @@ export default function(i) {
       return;
     }
 
-    const touch = getTouch(e);
+    const touches = getTouches(e);
+    
+    let totalPageX=0,totalPageY=0;
+    touches.forEach((touch)=>{
+      totalPageX+=touch.pageX;
+      totalPageY+=touch.pageY;
+    });
+    
+    const avePageX = totalPageX/touches.length;
+    const avePageY = totalPageY/touches.length;
+    // const touch = getTouch(e);
 
-    startOffset.pageX = touch.pageX;
-    startOffset.pageY = touch.pageY;
+    startOffset.pageX = avePageX;
+    startOffset.pageY = avePageY;
 
     startTime = new Date().getTime();
 
@@ -144,9 +163,21 @@ export default function(i) {
 
   function touchMove(e) {
     if (shouldHandle(e)) {
-      const touch = getTouch(e);
+  
+      const touches = getTouches(e);
+  
+      let totalPageX=0,totalPageY=0;
+      touches.forEach((touch)=>{
+        totalPageX+=touch.pageX;
+        totalPageY+=touch.pageY;
+      });
+  
+      const avePageX = totalPageX/touches.length;
+      const avePageY = totalPageY/touches.length;
+      
+      // const touch = getTouch(e);
 
-      const currentOffset = { pageX: touch.pageX, pageY: touch.pageY };
+      const currentOffset = { pageX: avePageX, pageY: avePageY };
 
       const differenceX = currentOffset.pageX - startOffset.pageX;
       const differenceY = currentOffset.pageY - startOffset.pageY;

@@ -46,7 +46,7 @@ export default class PerfectScrollbar {
     }
 
     this.element = element;
-
+    
     element.classList.add(cls.main);
 
     this.settings = defaultSettings();

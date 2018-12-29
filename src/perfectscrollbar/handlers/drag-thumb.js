@@ -97,6 +97,7 @@ function bindMouseScrollHandler(
     }
     
     i.event.bind(i[scrollbarY], 'mousedown', e => {
+        if (i.disabled) return;
         startingScrollTop = element[scrollTop];
         startingMousePageY = e[pageY];
         scrollBy =
@@ -112,6 +113,7 @@ function bindMouseScrollHandler(
         e.preventDefault();
     });
     i.event.bind(i[scrollbarY], 'touchstart', e => {
+        if (i.disabled) return;
         startingScrollTop = element[scrollTop];
         const touch = getTouch(e);
         startingMousePageY = touch[pageY];
