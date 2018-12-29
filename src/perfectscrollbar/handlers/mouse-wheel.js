@@ -111,7 +111,6 @@ export default function(i) {
   // 添加disable支持
   
   function mousewheelHandler(e) {
-    console.log(i.disabled);
     if(i.disabled) return;// disabled 支持
     
     const [deltaX, deltaY] = getDeltaFromEvent(e);
