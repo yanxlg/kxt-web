@@ -4,49 +4,14 @@
  *
  *
  */
-import React, {MouseEventHandler, createElement, CSSProperties} from 'react';
+import React, {createElement} from 'react';
 import ReactDom from 'react-dom';
 import {Bind} from "lodash-decorators";
-import {PerfectScrollbarFactory} from './perfectscrollbarfactory';
+import {
+    IScrollOptions,
+    PerfectScrollbarFactory,
+} from './perfectscrollbarfactory';
 
-
-export type handler =
-    'click-rail'
-    | 'drag-thumb'
-    | 'keyboard'
-    | 'wheel'
-    | 'touch';
-
-export interface IScrollFactoryOptions {
-    handlers?: handler[];
-    maxScrollbarLength?: number;
-    minScrollbarLength?: number;
-    scrollingThreshold?: number;
-    scrollXMarginOffset?: number;
-    scrollYMarginOffset?: number;
-    suppressScrollX?: boolean;
-    suppressScrollY?: boolean;
-    swipeEasing?: boolean;
-    useBothWheelAxes?: boolean;
-    wheelPropagation?: boolean;
-    wheelSpeed?: number;
-    disabled?:boolean;
-}
-export interface IScrollOptions extends IScrollFactoryOptions{
-    style?:CSSProperties;
-    className?: string;
-    onClick?: MouseEventHandler;
-    onMouseDown?: MouseEventHandler;
-    onMouseEnter?: MouseEventHandler;
-    onMouseLeave?: MouseEventHandler;
-    onMouseMove?: MouseEventHandler;
-    onMouseOut?: MouseEventHandler;
-    onMouseOver?: MouseEventHandler;
-    onMouseUp?: MouseEventHandler;
-    containerRef?: (ref: HTMLElement) => void;
-    tagName?: string;
-    autoHide?:boolean;
-}
 
 export default class PerfectScrollbar extends React.Component<IScrollOptions> {
     private scrollbar: PerfectScrollbarFactory;

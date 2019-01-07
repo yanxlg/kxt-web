@@ -9,9 +9,48 @@
 import {default as _PerfectScrollbar} from './index.lib';
 import {Spring, SpringSystem} from 'rebound';
 import {Bind, Debounce, Throttle} from 'lodash-decorators';
-import {IScrollFactoryOptions} from './index';
 import "./css/style.less";
 import "./css/perfect-scrollbar.css";
+import {CSSProperties, MouseEventHandler} from 'react';
+
+export type handler =
+    'click-rail'
+    | 'drag-thumb'
+    | 'keyboard'
+    | 'wheel'
+    | 'touch';
+
+export interface IScrollFactoryOptions {
+    handlers?: handler[];
+    maxScrollbarLength?: number;
+    minScrollbarLength?: number;
+    scrollingThreshold?: number;
+    scrollXMarginOffset?: number;
+    scrollYMarginOffset?: number;
+    suppressScrollX?: boolean;
+    suppressScrollY?: boolean;
+    swipeEasing?: boolean;
+    useBothWheelAxes?: boolean;
+    wheelPropagation?: boolean;
+    wheelSpeed?: number;
+    disabled?:boolean;
+}
+
+export interface IScrollOptions extends IScrollFactoryOptions{
+    style?:CSSProperties;
+    className?: string;
+    onClick?: MouseEventHandler;
+    onMouseDown?: MouseEventHandler;
+    onMouseEnter?: MouseEventHandler;
+    onMouseLeave?: MouseEventHandler;
+    onMouseMove?: MouseEventHandler;
+    onMouseOut?: MouseEventHandler;
+    onMouseOver?: MouseEventHandler;
+    onMouseUp?: MouseEventHandler;
+    containerRef?: (ref: HTMLElement) => void;
+    tagName?: string;
+    autoHide?:boolean;
+}
 
 class PerfectScrollbarFactory extends _PerfectScrollbar{
     private horizonSpringSystem: SpringSystem;
