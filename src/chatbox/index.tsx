@@ -145,7 +145,14 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
     private insertAtRange=(content:string,path:string,type:string)=>{
         const value=this.chatRoomInput.value;
         if(this.range!==undefined&&this.range!==null){
-            this.chatRoomInput.value=value.substring(0,this.range)+`[${content}]`+ value.substring(this.range);
+            const emotionString = value.substring(0,this.range)+`[${content}]`;
+            const nextValue = emotionString+ value.substring(this.range);
+            if(nextValue.length<=200){
+                this.chatRoomInput.value=nextValue;
+            }else{
+                this.chatRoomInput.value=nextValue.substr(0,200);
+            }
+            // this.chatRoomInput.value=value.substring(0,this.range)+`[${content}]`+ value.substring(this.range);
             this.chatRoomInput.focus();
         }else{
             this.chatRoomInput.value=`[${content}]`;
