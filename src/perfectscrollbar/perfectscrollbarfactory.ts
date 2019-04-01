@@ -11,7 +11,7 @@ import {Spring, SpringSystem} from 'rebound';
 import {Bind, Debounce, Throttle} from 'lodash-decorators';
 import "./css/style.less";
 import "./css/perfect-scrollbar.css";
-import {CSSProperties, MouseEventHandler} from 'react';
+import {CSSProperties, MouseEventHandler, RefObject} from 'react';
 
 export type handler =
     'click-rail'
@@ -47,7 +47,7 @@ export interface IScrollOptions extends IScrollFactoryOptions{
     onMouseOut?: MouseEventHandler;
     onMouseOver?: MouseEventHandler;
     onMouseUp?: MouseEventHandler;
-    containerRef?: (ref: HTMLElement) => void;
+    containerRef?: (ref: HTMLElement) => void|RefObject<any>;
     tagName?: string;
     autoHide?:boolean;
 }

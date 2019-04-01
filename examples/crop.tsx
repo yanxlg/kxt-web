@@ -5,15 +5,47 @@
  */
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import ImageCrop from "../src/crop";
+import PerfectScrollbar from "../src/perfectscrollbar";
+import {RefObject} from 'react';
+
+
+class Test extends React.Component{
+    private scrollRef:RefObject<PerfectScrollbar>=React.createRef();
+    componentDidMount(): void {
+        setTimeout(()=>{
+            this.scrollRef.current.scrollLeft(200,true);
+            setTimeout(()=>{
+                this.scrollRef.current.scrollTop(80,true);
+            },4000)
+        },4000)
+    }
+    
+    render(){
+        return (
+            <PerfectScrollbar suppressScrollX={true} suppressScrollY={true} ref={this.scrollRef} style={{whiteSpace:"nowrap",position:"relative",height:30}}>
+                <div style={{display:"inline-block",height:100}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+            </PerfectScrollbar>
+        )
+    }
+}
 
 ReactDOM.render(
     <div>
-        <div style={{position:"relative",width:300,height:300}}>
-            <ImageCrop autoCrop={true} cropCircle={true} src={require("./404.png")} preview={".img-preview"}/>
-        </div>
-        <div className={".img-preview"} id={"preview1"} style={{width:200,height:200,overflow:"hidden"}}/>
-        <div className={".img-preview"} id={"preview2"} style={{width:100,height:100,overflow:"hidden"}}/>
+        <Test/>
     </div>,
     document.getElementById('__react-content'),
 );
