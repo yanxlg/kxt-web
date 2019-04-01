@@ -47,7 +47,7 @@ export interface IScrollOptions extends IScrollFactoryOptions{
     onMouseOut?: MouseEventHandler;
     onMouseOver?: MouseEventHandler;
     onMouseUp?: MouseEventHandler;
-    containerRef?: (ref: HTMLElement) => void|RefObject<any>;
+    containerRef?: ((ref: HTMLElement) => void)|RefObject<any>;
     tagName?: string;
     autoHide?:boolean;
 }
