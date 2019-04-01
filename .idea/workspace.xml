@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +38,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="110" column="38" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="38" />
+            <state relative-caret-position="444">
+              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
               <folding>
                 <element signature="e#198#255#0" expanded="true" />
-                <element signature="n#!!block;n#scrollLeft#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollTop#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollToLeft#0;n#PerfectScrollbarFactory#0" />
                 <element signature="n#!!block;n#scrollToTop#0;n#PerfectScrollbarFactory#0" />
@@ -112,12 +112,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="256" column="17" lean-forward="true" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
+            <state relative-caret-position="4674">
+              <caret line="256" column="17" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
               <folding>
                 <element signature="e#72#98#0" expanded="true" />
-                <element signature="e#6#12#1" expanded="true" />
-                <element signature="e#6#12#1" expanded="true" />
                 <element signature="e#2801#3170#0" />
               </folding>
             </state>
@@ -138,8 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>popoverContent</find>
-      <find>showPopover</find>
       <find>codyy-chatroom-active</find>
       <find>@bgColor</find>
       <find>renderEmotion</find>
@@ -168,6 +164,8 @@
       <find>this.settings</find>
       <find>IScrollFactoryOptions</find>
       <find>containerRef</find>
+      <find>scrollLeft</find>
+      <find>verticalSpring</find>
     </findStrings>
     <replaceStrings>
       <replace>chatRoomInput</replace>
@@ -225,9 +223,9 @@
         <option value="$PROJECT_DIR$/src/perfectscrollbar/handlers/drag-thumb.js" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/css/style.less" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/handlers/mouse-wheel.js" />
-        <option value="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/src/chatbox/index.tsx" />
+        <option value="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -282,6 +280,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
@@ -382,18 +381,21 @@
       <workItem from="1552028824318" duration="554000" />
       <workItem from="1552270378360" duration="256000" />
       <workItem from="1552290597815" duration="911000" />
-      <workItem from="1553504928875" duration="549000" />
+      <workItem from="1553504928875" duration="1238000" />
+      <workItem from="1553506265272" duration="219000" />
+      <workItem from="1554090560101" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84617000" />
+    <option name="totallyTimeSpent" value="85611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
+      <window_info id="npm" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29637527" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -407,7 +409,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Code Review" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" weight="0.56759655" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4978678" weight="0.5669882" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021322" side_tool="true" weight="0.66201717" />
       <window_info anchor="bottom" id="Compute Code Lines" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -728,31 +730,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4674">
+          <caret line="256" column="17" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
+          <folding>
+            <element signature="e#72#98#0" expanded="true" />
+            <element signature="e#2801#3170#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="110" column="38" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="38" />
+        <state relative-caret-position="444">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
           <folding>
             <element signature="e#198#255#0" expanded="true" />
-            <element signature="n#!!block;n#scrollLeft#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollTop#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollToLeft#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollToTop#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollToRight#0;n#PerfectScrollbarFactory#0" />
             <element signature="n#!!block;n#scrollToBottom#0;n#PerfectScrollbarFactory#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="256" column="17" lean-forward="true" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
-          <folding>
-            <element signature="e#72#98#0" expanded="true" />
-            <element signature="e#6#12#1" expanded="true" />
-            <element signature="e#6#12#1" expanded="true" />
-            <element signature="e#2801#3170#0" />
           </folding>
         </state>
       </provider>

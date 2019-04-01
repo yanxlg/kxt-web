@@ -151,8 +151,8 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
         if (!this.element) return;
         if (animation) {
             const {scrollLeft} = this.element;
-            this.verticalSpring.setCurrentValue(scrollLeft).setAtRest();
-            this.verticalSpring.setEndValue(left);
+            this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
+            this.horizonSpring.setEndValue(left);
         } else {
             this.element.scrollLeft = left;
         }
