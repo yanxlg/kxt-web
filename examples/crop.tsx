@@ -14,15 +14,12 @@ class Test extends React.Component{
     componentDidMount(): void {
         setTimeout(()=>{
             this.scrollRef.current.scrollLeft(200,true);
-            setTimeout(()=>{
-                this.scrollRef.current.scrollTop(80,true);
-            },4000)
         },4000)
     }
     
     render(){
         return (
-            <PerfectScrollbar suppressScrollX={true} suppressScrollY={true} ref={this.scrollRef} style={{whiteSpace:"nowrap",position:"relative",height:30}}>
+            <PerfectScrollbar suppressScrollY={true} ref={this.scrollRef} style={{whiteSpace:"nowrap",position:"relative",height:30}}>
                 <div style={{display:"inline-block",height:100}}>sdsdsdsadsadsadsa</div>
                 <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
                 <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>

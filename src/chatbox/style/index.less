@@ -160,8 +160,9 @@
             font-size: @inputFontSize*@sizeRatio;
             line-height: @inputHeight*@sizeRatio;
             border: @inputBorderSize*@sizeRatio solid @inputBorderColor;
+            outline: none;
             &:focus{
-                border-color: @inputBorderActiveColor;
+                border-color: @inputBorderActiveColor!important;
             }
         }
         background: @inputBgColor;
