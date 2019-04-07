@@ -5,14 +5,13 @@
  * @Last Modified time: 2019/1/7 12:04
  * @disc:factory 脱离react
  */
-
+import {default as _PerfectScrollbar} from './index.lib';
 import {Spring, SpringSystem} from 'rebound';
 import {Bind, Debounce, Throttle} from 'lodash-decorators';
 import "./css/style.less";
 import "./css/perfect-scrollbar.css";
 import {CSSProperties, MouseEventHandler, RefObject} from 'react';
 
-const _PerfectScrollbar = require("./index.lib.js");
 
 export type handler =
     'click-rail'
