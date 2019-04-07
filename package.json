@@ -1,6 +1,6 @@
 {
   "name": "kxt-web",
-  "version": "1.4.9",
+  "version": "1.5.2",
   "description": "",
   "repository": {
     "type": "git",
@@ -42,7 +42,8 @@
     "chimee-plugin-contextmenu":"^0.1.2",
     "react-redux":"^5.1.1",
     "rebound": "^0.1.0",
-    "lodash-decorators": "^6.0.1"
+    "lodash-decorators": "^6.0.1",
+    "perfect-scrollbar": "^1.4.0"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
