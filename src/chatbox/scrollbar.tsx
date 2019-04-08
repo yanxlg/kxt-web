@@ -5,7 +5,6 @@
  */
 import React from "react";
 import PerfectScrollbar from '../perfectscrollbar';
-import "../perfectscrollbar/css/perfect-scrollbar.css";
 
 declare interface IScrollbarProps{
     disableHorizon?:boolean;// 禁用横向
