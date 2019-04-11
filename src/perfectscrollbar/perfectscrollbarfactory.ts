@@ -150,6 +150,7 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
     public scrollLeft(left: number, animation?: boolean) {
         if (!this.element) return;
         if (animation) {
+            this.verticalSpring.setAtRest();
             const {scrollLeft} = this.element;
             this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
             this.horizonSpring.setEndValue(left);
@@ -162,9 +163,8 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
     public scrollTop(top: number, animation?: boolean) {
         if (!this.element) return;
         if (animation) {
+            this.verticalSpring.setAtRest();
             const {scrollTop} = this.element;
-            // const val = MathUtil.mapValueInRange(top, 0, scrollHeight,
-            //     scrollHeight * 0.2, scrollHeight * 0.8);
             this.verticalSpring.setCurrentValue(scrollTop).setAtRest();
             this.verticalSpring.setEndValue(top);
         } else {
