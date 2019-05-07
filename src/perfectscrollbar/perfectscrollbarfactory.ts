@@ -66,12 +66,8 @@ class PerfectScrollbarFactory extends _PerfectScrollbar{
         // 隐藏滚动条
         if(value){
             this.element.classList.add("ps-scroll-disable");
-            this.settings.suppressScrollY=true;
-            this.settings.suppressScrollX=true;
         }else{
             this.element.classList.remove("ps-scroll-disable");
-            this.settings.suppressScrollY=false;
-            this.settings.suppressScrollX=false;
         }
     }
     constructor(element:HTMLElement,setting: IScrollFactoryOptions){
