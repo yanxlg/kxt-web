@@ -2,47 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/举手.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chatbox/emotions/0/small/掌声.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chatbox/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbox/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/亲亲.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/便便.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/偷笑.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/傲慢.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/发怒.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/吐.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/嘘.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/大哭.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/委屈.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/尴尬.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/得意.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/心裂.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/惊恐.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/惊讶.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/抓狂.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/抠鼻.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/撇嘴.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/擦汗.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/敲打.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/汗.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/流泪.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/炸弹.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/猪头.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/疑问.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/白眼.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/睡.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/示爱.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/耍酷.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/色.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/菜刀.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/衰.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/鄙视.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/酷.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/阴险.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/难过.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbox/emotions/0/small/龇牙.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/perfectscrollbar/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/perfectscrollbar/css/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="38">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -112,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20843">
+            <state relative-caret-position="20919">
               <caret line="1101" column="17" selection-start-line="1101" selection-start-column="2" selection-end-line="1101" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -143,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/chatbox/shell.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -291,6 +255,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="chatbox" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -303,7 +274,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rc-tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/chatbox/emotions/0/small" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -317,18 +288,18 @@
     <property name="ts.external.directory.path" value="D:\projects\kxt-web\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\kxt-web\src\chatbox\emotions\0\small" />
+      <recent name="C:\Project\kxt-web\src\perfect-scrollbar" />
+      <recent name="C:\Project\kxt-web\src\chatbox\icon" />
+      <recent name="C:\Project\kxt-web\src\chatbox" />
+      <recent name="C:\Project\kxt-web\src\connect" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Project\kxt-web\src\id-log" />
       <recent name="C:\Project\kxt-web\src\history" />
       <recent name="C:\Project\kxt-web\src\date-format" />
       <recent name="C:\Project\kxt-web\src\ppcw" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Project\kxt-web\src\perfect-scrollbar" />
-      <recent name="C:\Project\kxt-web\src\chatbox\icon" />
-      <recent name="C:\Project\kxt-web\src\chatbox" />
-      <recent name="C:\Project\kxt-web\src\connect" />
-      <recent name="C:\Project\kxt-web\src\loading" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -429,18 +400,19 @@
       <workItem from="1555482929572" duration="1117000" />
       <workItem from="1555658048928" duration="12000" />
       <workItem from="1556413132478" duration="2326000" />
-      <workItem from="1557230345199" duration="295000" />
+      <workItem from="1557230345199" duration="467000" />
+      <workItem from="1557281211355" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100680000" />
+    <option name="totallyTimeSpent" value="100932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36353946" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3672708" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -731,6 +703,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/rebound/rebound.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1444">
@@ -768,7 +747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20843">
+        <state relative-caret-position="20919">
           <caret line="1101" column="17" selection-start-line="1101" selection-start-column="2" selection-end-line="1101" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -783,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbox/shell.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbox/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -797,10 +769,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/chatbox/shell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="304">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
