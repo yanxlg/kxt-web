@@ -56,7 +56,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
                     const image=emotionList[i];
                     if(name===image.name){
                         exist=true;
-                        value=value.replace(val,`<img src="${image.path}"/>`);
+                        value=value.replace(val,`<img src="${image.path}" style="width:22px;height:22px"/>`);
                     }else{
                         i++;
                     }
