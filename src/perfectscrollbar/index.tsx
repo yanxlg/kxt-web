@@ -35,7 +35,7 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
             disabled
         } = this.props;
         const setting = {
-            handlers:disabled?[]:handlers,
+            handlers,
             maxScrollbarLength,
             minScrollbarLength,
             scrollingThreshold,
