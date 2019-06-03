@@ -130,10 +130,11 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
             onMouseOut,
             onMouseOver,
             onMouseUp,
+            id,
             children
         } = this.props;
         const mixClassName = autoHide?className:className+" ps-scroll-not-hide";
-        return createElement(tagName, {style,onClick,onMouseDown,onMouseEnter,onMouseLeave,onMouseMove,onMouseOut,onMouseOver,onMouseUp, ref: containerRef,className:mixClassName}, children);
+        return createElement(tagName, {id,style,onClick,onMouseDown,onMouseEnter,onMouseLeave,onMouseMove,onMouseOut,onMouseOver,onMouseUp, ref: containerRef,className:mixClassName}, children);
     }
 }
 

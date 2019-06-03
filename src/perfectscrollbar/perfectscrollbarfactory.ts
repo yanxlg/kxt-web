@@ -50,6 +50,7 @@ export interface IScrollOptions extends IScrollFactoryOptions{
     containerRef?: ((ref: HTMLElement) => void)|RefObject<any>;
     tagName?: string;
     autoHide?:boolean;
+    id?:string;
 }
 
 class PerfectScrollbarFactory extends _PerfectScrollbar{

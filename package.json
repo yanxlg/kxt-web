@@ -1,6 +1,6 @@
 {
   "name": "kxt-web",
-  "version": "1.6.3",
+  "version": "1.6.5",
   "description": "",
   "repository": {
     "type": "git",
@@ -40,7 +40,6 @@
     "chimee-plugin-controlbar":"^0.5.0",
     "chimee-plugin-center-state":"^0.0.11",
     "chimee-plugin-contextmenu":"^0.1.2",
-    "react-redux":"^5.1.1",
     "rebound": "^0.1.0",
     "lodash-decorators": "^6.0.1",
     "perfect-scrollbar": "^1.4.0"
@@ -67,7 +66,7 @@
     "yanxlg-rc-tools":"^8.1.8",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-redux": "^5.0.7",
+    "react-redux": "^7.0.3",
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.3.1",
     "redux-devtools-extension": "^2.13.5",
