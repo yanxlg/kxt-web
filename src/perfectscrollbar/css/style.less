@@ -8,20 +8,27 @@
 
 .ps-scroll-not-hide{
     .ps__rail-y{
-        opacity: 0.4;
+        opacity: 0.4!important;
     }
     .ps__rail-x{
-        opacity: 0.4;
+        opacity: 0.4!important;
     }
-    &.ps--active-y{
-        .ps__rail-y{
-            display: block!important;
-        }
+}
+
+.ps.ps--active-x>.ps__rail-x, .ps.ps--active-y>.ps__rail-y{
+    display: block!important;
+    opacity: 0;
+}
+
+.ps-scrolling-y{
+    .ps__rail-y{
+        opacity: 1!important;
     }
-    &.ps--active-x{
-        .ps__rail-x{
-            display: block!important;
-        }
+}
+
+.ps-scrolling-x{
+    .ps__rail-x{
+        opacity: 1!important;
     }
 }
 
@@ -42,4 +49,8 @@
     .ps__rail-y{
         visibility: hidden;
     }
+}
+
+.ps-content{
+    white-space: nowrap;
 }

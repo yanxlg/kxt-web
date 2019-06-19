@@ -11,30 +11,39 @@ import {RefObject} from 'react';
 
 class Test extends React.Component{
     private scrollRef:RefObject<PerfectScrollbar>=React.createRef();
+    private remove:boolean=false;
     componentDidMount(): void {
         setTimeout(()=>{
-            this.scrollRef.current.scrollLeft(200,true);
-        },4000)
+            this.remove=true;
+            this.forceUpdate();
+        },10000)
     }
     
     render(){
+        const style = {
+          height:100,
+            display:"inline-block",
+            width:300
+        };
         return (
-            <PerfectScrollbar suppressScrollY={true} ref={this.scrollRef} style={{whiteSpace:"nowrap",position:"relative",height:30}}>
-                <div style={{display:"inline-block",height:100}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
-                <div style={{display:"inline-block"}}>sdsdsdsadsadsadsa</div>
+            <PerfectScrollbar ref={this.scrollRef} style={{position:"relative",height:300}}>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                <div style={style}>sdsdsdsadsadsadsa</div>
+                {
+                    this.remove?null:<div style={style}>111111111111</div>
+                }
             </PerfectScrollbar>
         )
     }

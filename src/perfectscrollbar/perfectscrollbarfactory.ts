@@ -10,7 +10,8 @@ import {Bind, Debounce, Throttle} from 'lodash-decorators';
 import "./css/style.less";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import {CSSProperties, MouseEventHandler, RefObject} from 'react';
-const _PerfectScrollbar= require("perfect-scrollbar/dist/perfect-scrollbar.js");
+import PerfectScrollbar from "perfect-scrollbar";
+// const _PerfectScrollbar= require("perfect-scrollbar/dist/perfect-scrollbar.js");
 
 
 export type handler =
@@ -53,12 +54,13 @@ export interface IScrollOptions extends IScrollFactoryOptions{
     id?:string;
 }
 
-class PerfectScrollbarFactory extends _PerfectScrollbar{
+class PerfectScrollbarFactory extends PerfectScrollbar{
     private horizonSpringSystem: SpringSystem;
     private verticalSpringSystem: SpringSystem;
     private horizonSpring: Spring;
     private verticalSpring: Spring;
     private _disabled:boolean;
+    private element:HTMLDivElement;
     public get disabled(): boolean {
         return this._disabled;
     }
