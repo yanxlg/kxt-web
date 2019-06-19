@@ -5,3 +5,4 @@ export {default as Loading} from "./loading";
 export {default as connect} from "./connect";
 export {default as Chatbox} from "./chatbox";
 export {default as PerfectScrollbar} from "./perfectscrollbar";
+export {default as Scrollbar} from "./scrollbar";

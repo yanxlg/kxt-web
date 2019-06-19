@@ -1,0 +1,85 @@
+/**
+  * @disc:DESC
+  * @contain:CONTAIN]]
+  * @dependence:#[[DEPENDENCE
+  * @author:yanxinaliang
+  * @time：2019/6/19 17:09
+  */
+
+.rs{
+    &_hide{
+        .rs__rail-y.rs__rail-x{
+            opacity: 0;
+        }
+        &:hover{
+            .rs__rail-y,.rs__rail-x{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+.rs__rail-x,.rs__rail-y{
+    position: absolute;
+    border-radius: 6px;
+    transition: background-color .2s linear, opacity .2s linear;
+    background-color: transparent;
+    opacity: 0.6;
+    &:hover{
+        background-color: #eee;
+        opacity: 0.9;
+    }
+}
+
+.rs__rail-x{
+    right: 2px;
+    left: 2px;
+    bottom: 2px;
+    height: 6px;
+    &:hover{
+        height: 11px!important;
+        .rs__thumb-x{
+            width: 11px!important;
+            background-color: #999;
+        }
+    }
+}
+
+.rs__rail-y{
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 6px;
+    &:hover{
+        width: 11px!important;
+        .rs__thumb-y{
+            width: 11px!important;
+            background-color: #999;
+        }
+    }
+}
+
+.rs__thumb-x,.rs__thumb-y{
+    background-color: #aaa;
+    transition: background-color .2s linear, width .2s ease-in-out;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: inherit;
+}
+
+.rs__thumb-x{
+    height: 100%;
+    &:hover{
+        height: 11px!important;
+        background-color: #999;
+    }
+}
+
+
+.rs__thumb-y{
+    width: 100%;
+    &:hover{
+        width: 11px!important;
+        background-color: #999;
+    }
+}
