@@ -183,7 +183,7 @@ class Scrollbar extends React.Component<ScrollbarProps>{
         this.verticalSpring = undefined;
     }
     render(){
-        const {style,autoHide,className="",...props} = this.props;
+        const {style,autoHide=true,className="",...props} = this.props;
         return (
             <Scrollbars ref={this.ref} className={`${className} rs ${autoHide?"rs_hide":""}`} renderTrackHorizontal={Scrollbar.renderTrackHorizontal} renderThumbHorizontal={Scrollbar.renderThumbHorizontal} renderTrackVertical={Scrollbar.renderTrackVertical} renderThumbVertical={Scrollbar.renderThumbVertical} {...props} style={Object.assign({},{position:'relative',height:"100%",width:"100%"},style)}/>
         )
