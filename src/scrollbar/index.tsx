@@ -103,7 +103,7 @@ class Scrollbar extends React.Component<ScrollbarProps>{
             this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
             this.horizonSpring.setEndValue(left);
         } else {
-            this.ref.current.scrollLeft(top);
+            this.ref.current.scrollLeft(left);
         }
     };
     @Bind
