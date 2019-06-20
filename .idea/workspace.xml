@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scrollbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scrollbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/crop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/crop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scrollbar/scroll.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/scrollbar/scroll.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+            <state relative-caret-position="215">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding>
                 <element signature="e#73#104#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="192" column="25" lean-forward="true" selection-start-line="192" selection-start-column="25" selection-end-line="192" selection-end-column="25" />
+            <state relative-caret-position="445">
+              <caret line="163" column="6" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="6" />
               <folding>
                 <element signature="e#103#171#0" expanded="true" />
               </folding>
@@ -104,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scrollbar/scroll.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="304">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -222,10 +222,10 @@
         <option value="$PROJECT_DIR$/src/perfectscrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/examples/scroll.css" />
         <option value="$PROJECT_DIR$/examples/scroll.less" />
-        <option value="$PROJECT_DIR$/src/scrollbar/scroll.less" />
-        <option value="$PROJECT_DIR$/examples/crop.tsx" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/scrollbar/index.tsx" />
+        <option value="$PROJECT_DIR$/examples/crop.tsx" />
+        <option value="$PROJECT_DIR$/src/scrollbar/scroll.less" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -261,19 +261,6 @@
               <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="perfectscrollbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="perfectscrollbar" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
@@ -429,18 +416,19 @@
       <workItem from="1559706653152" duration="1605000" />
       <workItem from="1560921709534" duration="6900000" />
       <workItem from="1560933039465" duration="9043000" />
-      <workItem from="1560947418540" duration="1023000" />
+      <workItem from="1560947418540" duration="1153000" />
+      <workItem from="1560991829252" duration="739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123205000" />
+    <option name="totallyTimeSpent" value="124074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24733475" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -455,7 +443,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Code Review" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" visible="true" weight="0.38948497" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" weight="0.38948497" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" weight="0.55686694" />
       <window_info anchor="bottom" id="Compute Code Lines" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -789,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding>
-            <element signature="e#73#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -816,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrollbar/scroll.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-custom-scrollbars/dist/react-custom-scrollbars.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -830,10 +801,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#73#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrollbar/scroll.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="192" column="25" lean-forward="true" selection-start-line="192" selection-start-column="25" selection-end-line="192" selection-end-column="25" />
+        <state relative-caret-position="445">
+          <caret line="163" column="6" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="6" />
           <folding>
             <element signature="e#103#171#0" expanded="true" />
           </folding>

@@ -23,7 +23,6 @@ class ItemList extends React.Component{
         const style = {
             height:100,
             width:300,
-            display:"inline-block"
         };
         return (
             <React.Fragment>
