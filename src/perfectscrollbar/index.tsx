@@ -4,7 +4,7 @@
  *
  *
  */
-import React, {createElement, RefObject} from 'react';
+import React, {createElement} from 'react';
 import ReactDom from 'react-dom';
 import {Bind} from "lodash-decorators";
 import {
@@ -16,7 +16,6 @@ import {
 export default class PerfectScrollbar extends React.Component<IScrollOptions> {
     private scrollbar: PerfectScrollbarFactory;
     private container: HTMLElement;
-    private contentWrap:RefObject<HTMLDivElement>=React.createRef();
     @Bind
     private getUserSetting(){
         const {
@@ -109,13 +108,6 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
     componentDidUpdate(
         prevProps: Readonly<IScrollOptions>, prevState: Readonly<{}>,
         snapshot?: any): void {
-        const {clientWidth,clientHeight,scrollTop,scrollLeft} = this.container;
-        if(this.contentWrap.current.scrollHeight-clientHeight<scrollTop){
-            this.scrollbar.scrollTop(this.contentWrap.current.scrollHeight-clientHeight);
-        }
-        if(this.contentWrap.current.scrollWidth-clientWidth<scrollLeft){
-            this.scrollbar.scrollLeft(this.contentWrap.current.scrollWidth-clientWidth);
-        }
         this.update();
         const {disabled} = this.props;
         this.scrollbar.disabled=disabled;
@@ -140,7 +132,7 @@ export default class PerfectScrollbar extends React.Component<IScrollOptions> {
             children
         } = this.props;
         const mixClassName = autoHide?className:className+" ps-scroll-not-hide";
-        return createElement(tagName, {id,style,onClick,onMouseDown,onMouseEnter,onMouseLeave,onMouseMove,onMouseOut,onMouseOver,onMouseUp, ref: containerRef,className:mixClassName},<div className="ps-content" ref={this.contentWrap}>{children}</div>);
+        return createElement(tagName, {id,style,onClick,onMouseDown,onMouseEnter,onMouseLeave,onMouseMove,onMouseOut,onMouseOver,onMouseUp, ref: containerRef,className:mixClassName},children);
     }
 }
 
