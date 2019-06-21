@@ -60,7 +60,7 @@ class Test extends React.Component{
     render(){
         return (
             <React.Fragment>
-                <PerfectScrollbar  style={{position:"relative",height:300}}>
+                <PerfectScrollbar  autoHide={false} style={{position:"relative",height:300}}>
                     <ItemList/>
                 </PerfectScrollbar>
                 <div style={{position:"relative",height:300,whiteSpace:"nowrap"}}>
