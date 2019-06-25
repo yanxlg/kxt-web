@@ -3,41 +3,24 @@
  * @time：2019/6/19 17:45
  */
 import * as React from "react";
-// @ts-ignore
-import {Scrollbars, ScrollbarProps,} from 'react-custom-scrollbars';
+import {
+    default as Scrollbars,
+    ScrollbarProps,
+    positionValues,
+} from 'react-custom-scrollbars';
 import "./scroll.less";
 import {RefObject} from 'react';
 import {Spring, SpringSystem} from 'rebound';
 import {Bind} from 'lodash-decorators';
 
-/*onScroll?: React.UIEventHandler<any>;
-onScrollFrame?: (values: positionValues) => void;
-onScrollStart?: () => void;
-onScrollStop?: () => void;
-onUpdate?: (values: positionValues) => void;
 
-renderView?: React.StatelessComponent<any>;
-renderTrackHorizontal?: React.StatelessComponent<any>;
-renderTrackVertical?: React.StatelessComponent<any>;
-renderThumbHorizontal?: React.StatelessComponent<any>;
-renderThumbVertical?: React.StatelessComponent<any>;
+declare interface IScrollbarState {
+    showHorizon:boolean;
+    showVertical:boolean;
+}
 
-tagName?: string;
-hideTracksWhenNotNeeded?: boolean;
 
-autoHide?: boolean;
-autoHideTimeout?: number;
-autoHideDuration?: number;
-
-thumbSize?: number;
-thumbMinSize?: number;
-universal?: boolean;
-
-autoHeight?: boolean;
-autoHeightMin?: number | string;
-autoHeightMax?: number | string;*/
-
-class Scrollbar extends React.Component<ScrollbarProps>{
+class Scrollbar extends React.PureComponent<ScrollbarProps,IScrollbarState>{
     private ref:RefObject<Scrollbars>=React.createRef();
     private horizonSpringSystem: SpringSystem;
     private verticalSpringSystem: SpringSystem;
@@ -73,6 +56,10 @@ class Scrollbar extends React.Component<ScrollbarProps>{
             {onSpringUpdate: this.handleHorizonSpringUpdate});
         this.verticalSpring.addListener(
             {onSpringUpdate: this.handleVerticalSpringUpdate});
+        this.state={
+            showHorizon:false,
+            showVertical:false
+        }
     }
     
     @Bind
@@ -170,6 +157,14 @@ class Scrollbar extends React.Component<ScrollbarProps>{
     public getValues(){
         return this.ref.current.getValues();
     };
+    @Bind
+    private onUpdate(values: positionValues){
+        const {scrollHeight,scrollWidth,clientWidth,clientHeight} = values;
+        this.setState({
+            showHorizon:scrollWidth>clientWidth,
+            showVertical:scrollHeight>clientHeight
+        })
+    }
     componentWillUnmount(): void {
         this.horizonSpringSystem.deregisterSpring(this.horizonSpring);
         this.horizonSpringSystem.removeAllListeners();
@@ -184,8 +179,9 @@ class Scrollbar extends React.Component<ScrollbarProps>{
     }
     render(){
         const {style,autoHide=true,className="",...props} = this.props;
+        const {showHorizon,showVertical} = this.state;
         return (
-            <Scrollbars ref={this.ref} className={`${className} rs ${autoHide?"rs_hide":""}`} renderTrackHorizontal={Scrollbar.renderTrackHorizontal} renderThumbHorizontal={Scrollbar.renderThumbHorizontal} renderTrackVertical={Scrollbar.renderTrackVertical} renderThumbVertical={Scrollbar.renderThumbVertical} {...props} style={Object.assign({},{position:'relative',height:"100%",width:"100%"},style)}/>
+            <Scrollbars ref={this.ref} onUpdate={this.onUpdate} className={`${className} rs ${autoHide?"rs_hide":""} ${showHorizon?"rs--active-x":""} ${showVertical?"rs--active-y":""}`} renderTrackHorizontal={Scrollbar.renderTrackHorizontal} renderThumbHorizontal={Scrollbar.renderThumbHorizontal} renderTrackVertical={Scrollbar.renderTrackVertical} renderThumbVertical={Scrollbar.renderThumbVertical} {...props} style={Object.assign({},{position:'relative',height:"100%",width:"100%"},style)}/>
         )
     }
 }
