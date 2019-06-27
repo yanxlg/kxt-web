@@ -102,3 +102,5 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
 }
 
 export {RecyclerListView};
+
+export default RecyclerListView;

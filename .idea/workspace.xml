@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recyclerlistview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/recyclerlistview/index.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+            <state relative-caret-position="1045">
+              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
               <folding>
                 <element signature="e#73#104#0" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            <state relative-caret-position="152">
+              <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -59,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@types/react-custom-scrollbars/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="26" column="52" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="26" selection-end-column="52" />
+            <state relative-caret-position="494">
+              <caret line="26" column="52" selection-start-line="22" selection-start-column="6" selection-end-line="26" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="418">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#57#88#0" expanded="true" />
               </folding>
@@ -92,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/recyclerlistview/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="444">
+              <caret line="105" column="31" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="31" />
               <folding>
                 <element signature="e#70#120#0" expanded="true" />
               </folding>
@@ -210,13 +210,13 @@
         <option value="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" />
         <option value="$PROJECT_DIR$/examples/scroll.css" />
         <option value="$PROJECT_DIR$/examples/scroll.less" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/css/style.less" />
         <option value="$PROJECT_DIR$/src/scrollbar/scroll.less" />
         <option value="$PROJECT_DIR$/src/scrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/examples/crop.tsx" />
         <option value="$PROJECT_DIR$/src/recyclerlistview/index.tsx" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -237,6 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,7 +277,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,18 +427,19 @@
       <workItem from="1561104710810" duration="157000" />
       <workItem from="1561434730993" duration="14736000" />
       <workItem from="1561533479785" duration="605000" />
-      <workItem from="1561612303055" duration="328000" />
+      <workItem from="1561612303055" duration="520000" />
+      <workItem from="1561613421254" duration="46000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142663000" />
+    <option name="totallyTimeSpent" value="142901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -453,7 +454,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Code Review" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" weight="0.3847803" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" visible="true" weight="0.36802575" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" weight="0.55686694" />
       <window_info anchor="bottom" id="Compute Code Lines" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -777,10 +778,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
+    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        <state relative-caret-position="1045">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="e#73#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-custom-scrollbars/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="52" selection-start-line="22" selection-start-column="6" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="e#57#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -798,50 +822,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="e#57#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react-custom-scrollbars/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="e#73#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/recyclerlistview/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="444">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="31" />
           <folding>
             <element signature="e#70#120#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

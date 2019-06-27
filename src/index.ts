@@ -6,3 +6,4 @@ export {default as connect} from "./connect";
 export {default as Chatbox} from "./chatbox";
 export {default as PerfectScrollbar} from "./perfectscrollbar";
 export {default as Scrollbar} from "./scrollbar";
+export {default as RecyclerListView} from "./recyclerlistview";
