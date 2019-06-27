@@ -21,6 +21,8 @@ interface IRecyclerListViewProps<T> {
     onUpdate?: (values: positionValues) => void;
     recyclerListHeader?:ReactNode;
     recyclerListFooter?:ReactNode;
+    className?:string;
+    autoHide?:boolean;
 }
 
 interface IRecyclerListViewState {
@@ -67,6 +69,10 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
         });
     }
     @Bind
+    public getValues(){
+        return this.scrollRef.current.getValues();
+    }
+    @Bind
     private onScrollFrame(values: positionValues){
         const {top} = values;
         const {dataList=[],drawCount} = this.props;
@@ -87,10 +93,10 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
     }
     render(){
         const {drawStart,drawEnd} = this.state;
-        const {dataList=[],children,onScroll,onScrollStart,onScrollStop,onUpdate,recyclerListHeader,recyclerListFooter} = this.props;
+        const {dataList=[],children,onScroll,onScrollStart,onScrollStop,onUpdate,recyclerListHeader,recyclerListFooter,className,autoHide} = this.props;
         const listData = dataList.slice(drawStart,drawEnd);
         return (
-            <Scrollbar ref={this.scrollRef} onScrollFrame={this.onScrollFrame} onScroll={onScroll} onScrollStart={onScrollStart} onScrollStop={onScrollStop} onUpdate={onUpdate}>
+            <Scrollbar ref={this.scrollRef} className={className} autoHide={autoHide} onScrollFrame={this.onScrollFrame} onScroll={onScroll} onScrollStart={onScrollStart} onScrollStop={onScrollStop} onUpdate={onUpdate}>
                 {recyclerListHeader}
                 {
                     listData.map((data:any,index:number)=>children((drawStart+index).toString(),data))
