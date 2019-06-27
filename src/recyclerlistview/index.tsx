@@ -14,6 +14,13 @@ interface IRecyclerListViewProps<T> {
     dataList:T[];
     children:(key:string,data:T)=>ReactNode;// 一定需要key绑定
     initPosition:"top"|"bottom";
+    onScroll?: React.UIEventHandler<any>;
+    onScrollFrame?: (values: positionValues) => void;
+    onScrollStart?: () => void;
+    onScrollStop?: () => void;
+    onUpdate?: (values: positionValues) => void;
+    recyclerListHeader?:ReactNode;
+    recyclerListFooter?:ReactNode;
 }
 
 interface IRecyclerListViewState {
@@ -76,16 +83,19 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
             drawStart:nextStart,
             drawEnd:nextEnd
         });
+        this.props.onScrollFrame&&this.props.onScrollFrame(values);
     }
     render(){
         const {drawStart,drawEnd} = this.state;
-        const {dataList=[],children} = this.props;
+        const {dataList=[],children,onScroll,onScrollStart,onScrollStop,onUpdate,recyclerListHeader,recyclerListFooter} = this.props;
         const listData = dataList.slice(drawStart,drawEnd);
         return (
-            <Scrollbar ref={this.scrollRef} onScrollFrame={this.onScrollFrame}>
+            <Scrollbar ref={this.scrollRef} onScrollFrame={this.onScrollFrame} onScroll={onScroll} onScrollStart={onScrollStart} onScrollStop={onScrollStop} onUpdate={onUpdate}>
+                {recyclerListHeader}
                 {
                     listData.map((data:any,index:number)=>children((drawStart+index).toString(),data))
                 }
+                {recyclerListFooter}
             </Scrollbar>
         )
     }
