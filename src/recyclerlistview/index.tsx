@@ -24,6 +24,9 @@ interface IRecyclerListViewProps<T> {
     className?:string;
     autoHide?:boolean;
     contentClassName?:string;
+    hide?:boolean;
+    hideX?:boolean;
+    hideY?:boolean;
 }
 
 interface IRecyclerListViewState {
@@ -94,10 +97,10 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
     }
     render(){
         const {drawStart,drawEnd} = this.state;
-        const {dataList=[],children,onScroll,onScrollStart,onScrollStop,onUpdate,recyclerListHeader,recyclerListFooter,className,autoHide,contentClassName} = this.props;
+        const {dataList=[],children,onScroll,onScrollStart,onScrollStop,onUpdate,recyclerListHeader,recyclerListFooter,className,autoHide,contentClassName,hide,hideX,hideY} = this.props;
         const listData = dataList.slice(drawStart,drawEnd);
         return (
-            <Scrollbar ref={this.scrollRef} className={className} autoHide={autoHide} onScrollFrame={this.onScrollFrame} onScroll={onScroll} onScrollStart={onScrollStart} onScrollStop={onScrollStop} onUpdate={onUpdate}>
+            <Scrollbar ref={this.scrollRef} hide={hide} hideX={hideX} hideY={hideY} className={className} autoHide={autoHide} onScrollFrame={this.onScrollFrame} onScroll={onScroll} onScrollStart={onScrollStart} onScrollStop={onScrollStop} onUpdate={onUpdate}>
                 <div className={contentClassName}>
                     {recyclerListHeader}
                     {

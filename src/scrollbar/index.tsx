@@ -13,6 +13,12 @@ import {RefObject} from 'react';
 import {Spring, SpringSystem} from 'rebound';
 import {Bind} from 'lodash-decorators';
 
+declare interface IScrollbarProps extends ScrollbarProps{
+    hide?:boolean;
+    hideX?:boolean;
+    hideY?:boolean;
+}
+
 
 declare interface IScrollbarState {
     showHorizon:boolean;
@@ -20,7 +26,7 @@ declare interface IScrollbarState {
 }
 
 
-class Scrollbar extends React.PureComponent<ScrollbarProps,IScrollbarState>{
+class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
     private ref:RefObject<Scrollbars>=React.createRef();
     private horizonSpringSystem: SpringSystem;
     private verticalSpringSystem: SpringSystem;
@@ -179,10 +185,10 @@ class Scrollbar extends React.PureComponent<ScrollbarProps,IScrollbarState>{
         this.verticalSpring = undefined;
     }
     render(){
-        const {style,autoHide=true,className="",onUpdate,...props} = this.props;
+        const {style,autoHide=true,className="",onUpdate,hide,hideX,hideY,...props} = this.props;
         const {showHorizon,showVertical} = this.state;
         return (
-            <Scrollbars ref={this.ref} onUpdate={this.onUpdate} className={`${className} rs ${autoHide?"rs_hide":""} ${showHorizon?"rs--active-x":""} ${showVertical?"rs--active-y":""}`} renderTrackHorizontal={Scrollbar.renderTrackHorizontal} renderThumbHorizontal={Scrollbar.renderThumbHorizontal} renderTrackVertical={Scrollbar.renderTrackVertical} renderThumbVertical={Scrollbar.renderThumbVertical} {...props} style={Object.assign({},{position:'relative',height:"100%",width:"100%"},style)}/>
+            <Scrollbars ref={this.ref} onUpdate={this.onUpdate} className={`${className} rs ${autoHide?"rs_hide":""} ${showHorizon?"rs--active-x":""} ${showVertical?"rs--active-y":""} ${(hide||hideX)?"rs-hide-x":""} ${(hide||hideY)?"rs-hide-y":""}`} renderTrackHorizontal={Scrollbar.renderTrackHorizontal} renderThumbHorizontal={Scrollbar.renderThumbHorizontal} renderTrackVertical={Scrollbar.renderTrackVertical} renderThumbVertical={Scrollbar.renderThumbVertical} {...props} style={Object.assign({},{position:'relative',height:"100%",width:"100%"},style)}/>
         )
     }
 }
