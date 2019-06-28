@@ -13,7 +13,6 @@ interface IRecyclerListViewProps<T> {
     drawCount:number;// 显示数量
     dataList:T[];
     children:(key:string,data:T)=>ReactNode;// 一定需要key绑定
-    initPosition:"top"|"bottom";
     onScroll?: React.UIEventHandler<any>;
     onScrollFrame?: (values: positionValues) => void;
     onScrollStart?: () => void;
@@ -39,26 +38,10 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
     private scrollRef:RefObject<Scrollbar>=React.createRef();
     constructor(props:IRecyclerListViewProps<T>){
         super(props);
-        const {dataList=[],drawCount,initPosition} = props;
-        if(initPosition==="top"){
-            this.state={
-                drawStart:0,
-                drawEnd:drawCount
-            }
-        }else{
-            const length = dataList.length;
-            const drawEnd = Math.max(length,drawCount);
-            this.state={
-                drawStart:Math.max(0,drawEnd-drawCount),
-                drawEnd:drawEnd
-            }
-        }
-    }
-    componentDidMount(): void {
-        // 如果初始化位置在底部则需要自动滚动到底部
-        const {initPosition} = this.props;
-        if(initPosition==="bottom"){
-            this.scrollRef.current.scrollToBottom(false);
+        const {drawCount} = props;
+        this.state={
+            drawStart:0,
+            drawEnd:drawCount
         }
     }
     @Bind
