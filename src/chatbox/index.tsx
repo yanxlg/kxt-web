@@ -7,7 +7,7 @@ import React from "react";
 import "./style/index";
 import {Popover} from "antd";
 import "antd/lib/popover/style/index.less";
-import {Scrollbar} from './scrollbar';
+import Scrollbar from '../scrollbar';
 
 declare const require :any;
 let emotions = require("./config.json");
@@ -257,7 +257,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
                 {
                     showEmotion?(
                         <div className="chatbox-emotion-container" ref={(ref:any)=>this.emotionContainer=ref}>
-                            <Scrollbar disableHorizon={true}>
+                            <Scrollbar>
                                 {
                                     (emotion_active.images||[]).map((image:any,index:number)=>{
                                         const path=image.path;
@@ -270,7 +270,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
                                 }
                             </Scrollbar>
                             <div className="chatbox-emotion-container-packs">
-                                <Scrollbar disableVertical={true}>
+                                <Scrollbar>
                                     {
                                         emotions.map((emotion:any,index:number)=>{
                                             return  (

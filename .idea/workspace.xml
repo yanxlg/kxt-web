@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a81b7214-14d7-4115-8359-019be36b1583" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/crop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/crop.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recyclerlistview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/recyclerlistview/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbox/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbox/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbox/scrollbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbox/style/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbox/style/index.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,19 +30,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
-              <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#73#104#0" expanded="true" />
               </folding>
@@ -59,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@types/react-custom-scrollbars/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
+            <state relative-caret-position="665">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -71,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="114">
               <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="e#57#88#0" expanded="true" />
@@ -92,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/recyclerlistview/index.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="59" column="43" lean-forward="true" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+            <state relative-caret-position="19">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
               <folding>
                 <element signature="e#70#120#0" expanded="true" />
               </folding>
@@ -106,6 +100,30 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="722">
               <caret line="38" column="13" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="258" column="46" selection-start-line="258" selection-start-column="46" selection-end-line="258" selection-end-column="46" />
+              <folding>
+                <element signature="e#72#98#0" expanded="true" />
+                <element signature="e#6#12#1" expanded="true" />
+                <element signature="e#6#12#1" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chatbox/style/index.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -125,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>deregisterSpring</find>
       <find>setAtRest</find>
       <find>scrollToBottom</find>
       <find>EventManager</find>
@@ -155,6 +172,7 @@
       <find>conso</find>
       <find>console.log</find>
       <find>initPosition</find>
+      <find>scrollbar</find>
     </findStrings>
     <replaceStrings>
       <replace>chatRoomInput</replace>
@@ -201,22 +219,22 @@
         <option value="$PROJECT_DIR$/src/perfectscrollbar/handlers/click-rail.js" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/handlers/drag-thumb.js" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/handlers/mouse-wheel.js" />
-        <option value="$PROJECT_DIR$/src/chatbox/style/index.less" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/index.lib.d.ts" />
         <option value="$PROJECT_DIR$/es/perfectscrollbar/index.lib.js" />
         <option value="$PROJECT_DIR$/src/chatbox/scrollbar.tsx" />
-        <option value="$PROJECT_DIR$/src/chatbox/index.tsx" />
         <option value="$PROJECT_DIR$/node_modules/perfect-scrollbar/dist/perfect-scrollbar.js" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/perfectscrollbarfactory.ts" />
         <option value="$PROJECT_DIR$/examples/scroll.css" />
         <option value="$PROJECT_DIR$/examples/scroll.less" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/src/perfectscrollbar/css/style.less" />
-        <option value="$PROJECT_DIR$/examples/crop.tsx" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/scrollbar/scroll.less" />
         <option value="$PROJECT_DIR$/src/scrollbar/index.tsx" />
         <option value="$PROJECT_DIR$/src/recyclerlistview/index.tsx" />
+        <option value="$PROJECT_DIR$/src/chatbox/index.tsx" />
+        <option value="$PROJECT_DIR$/examples/crop.tsx" />
+        <option value="$PROJECT_DIR$/src/chatbox/style/index.less" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -227,7 +245,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="1918" />
     <option name="height" value="1057" />
@@ -237,6 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,6 +272,12 @@
               <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kxt-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kxt-web" type="b2602c69:ProjectViewProjectNode" />
@@ -276,7 +301,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,18 +458,21 @@
       <workItem from="1561627879767" duration="287000" />
       <workItem from="1561630878214" duration="1183000" />
       <workItem from="1561684678139" duration="401000" />
-      <workItem from="1561689287640" duration="166000" />
+      <workItem from="1561689287640" duration="785000" />
+      <workItem from="1561690776543" duration="701000" />
+      <workItem from="1561693242827" duration="222000" />
+      <workItem from="1561708803263" duration="464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145667000" />
+    <option name="totallyTimeSpent" value="147673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="0" width="1918" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29601723" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -460,7 +487,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Code Review" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" weight="0.36334404" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49733475" weight="0.36511377" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" weight="0.55686694" />
       <window_info anchor="bottom" id="Compute Code Lines" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -500,13 +527,6 @@
     <entry file="file://$PROJECT_DIR$/examples/crop.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbox/style/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="165" column="13" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/es/perfectscrollbar/index.lib.js" />
     <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/process-scroll-diff.js" />
     <entry file="file://$PROJECT_DIR$/src/perfectscrollbar/index.lib.js" />
@@ -540,16 +560,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbox/style/index.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbox/scrollbar.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#67#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatbox/emotions/0/small/点赞.gif">
       <provider selected="true" editor-type-id="images" />
@@ -593,16 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#72#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,16 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="e#73#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -803,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react-custom-scrollbars/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
+        <state relative-caret-position="665">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -813,7 +803,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scrollbar/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="114">
           <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="e#57#88#0" expanded="true" />
@@ -837,11 +827,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/recyclerlistview/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="59" column="43" lean-forward="true" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="19">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
           <folding>
             <element signature="e#70#120#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbox/scrollbar.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#67#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/crop.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#73#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbox/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="258" column="46" selection-start-line="258" selection-start-column="46" selection-end-line="258" selection-end-column="46" />
+          <folding>
+            <element signature="e#72#98#0" expanded="true" />
+            <element signature="e#6#12#1" expanded="true" />
+            <element signature="e#6#12#1" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbox/style/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
         </state>
       </provider>
     </entry>
