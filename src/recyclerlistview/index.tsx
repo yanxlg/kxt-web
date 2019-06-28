@@ -62,14 +62,25 @@ class RecyclerListView<T> extends React.PureComponent<IRecyclerListViewProps<T>,
         }
     }
     @Bind
-    public scrollToBottom(){
-        this.scrollRef.current.scrollToBottom(true);
+    public scrollToBottom(animation?:boolean){
         const {dataList=[],drawCount} = this.props;
         const length = dataList.length;
         const drawEnd = Math.max(length,drawCount);
         this.setState({
             drawStart:Math.max(0,drawEnd-drawCount),
             drawEnd:drawEnd
+        },()=>{
+            this.scrollRef.current.scrollToBottom(animation);
+        });
+    }
+    @Bind
+    public scrollToTop(animation?:boolean){
+        const {drawCount} = this.props;
+        this.setState({
+            drawStart:0,
+            drawEnd:drawCount
+        },()=>{
+            this.scrollRef.current.scrollToTop(animation);
         });
     }
     @Bind
