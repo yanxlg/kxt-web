@@ -16,7 +16,7 @@ module.exports=function(webpackConfig) {
     
     // console.log(webpackConfig.module.rules);
     webpackConfig.module.rules.unshift({
-        test: /\.(png|jpg|jpeg|webp)$/i,
+        test: /\.(png|jpg|jpeg|webp|gif)$/i,
         use: { loader: 'file',options:{name: 'examples/[hash].[ext]',publicPath:"../"}},
     });
     webpackConfig.module.rules.unshift({

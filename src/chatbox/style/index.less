@@ -4,10 +4,8 @@
   * @time：2018/4/10 9:16
   */
 
-@sizeRatio:1rem/40px;// 外部覆盖 less-loader  modifyVars
-
 @height:48px;
-@padding:0 5px*@sizeRatio;
+@padding:0 5px;
 @emotionIconSize:28px;
 @inputBorderColor:#999999;
 @inputBorderSize:1px;
@@ -15,11 +13,11 @@
 
 @inputSpacing:5px;
 @inputHeight:40px;
-@inputPadding:2px*@sizeRatio 4px*@sizeRatio;
+@inputPadding:2px 4px;
 @inputColor:#666666;
 @inputFontSize:14px;
 @inputBgColor:#fff;
-@smallIconSize:20px;
+@smallIconSize:32px;
 
 
 @sendWidth:34px;
@@ -30,8 +28,8 @@
 
 
 @emotionBoxBorder:1px;
-@emotionBoxWidth:288px;
-@emotionBoxHeight:240px;
+@emotionBoxWidth:296px;
+@emotionBoxHeight:120px;
 @emotionBgColor:#fff;
 @emotionBoxBorderColor:#dcdcdc;
 @emotionBarHeight:32px;
@@ -39,13 +37,14 @@
 @emotionBarItemWidth:54px;
 @emotionBarItemActiveBgColor:#fff;
 
+@containerWrapMargin:16px;
 
-@emotionSmallSize:32px;
+@emotionItemSize:44px;
 
 @_left:5px;
 
 .chatbox{
-    height:@height*@sizeRatio;
+    height:@height;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -56,13 +55,13 @@
         pointer-events: none;
     }
     &-emotion{
-        width: @emotionIconSize*@sizeRatio;
-        height: @emotionIconSize*@sizeRatio;
+        width: @emotionIconSize;
+        height: @emotionIconSize;
         background: url("../icon/emotion.png") no-repeat center;
         background-size: cover;
         position: absolute;
-        left:@_left*@sizeRatio;
-        top:(@height - @emotionIconSize)/2*@sizeRatio;
+        left:@_left;
+        top:(@height - @emotionIconSize)/2;
         cursor: pointer;
         &:hover{
             background-image: url("../icon/emotion_hover.png");
@@ -72,34 +71,34 @@
         }
         &-container{
             position: absolute;
-            bottom: @height*@sizeRatio;
-            border: @emotionBoxBorder*@sizeRatio solid @emotionBoxBorderColor;
-            width: @emotionBoxWidth*@sizeRatio;
-            height: @emotionBoxHeight*@sizeRatio;
-            left: @_left*@sizeRatio;
+            bottom: @height;
+            border: @emotionBoxBorder solid @emotionBoxBorderColor;
+            width: @emotionBoxWidth;
+            height: @emotionBoxHeight;
+            left: @_left;
             background: @emotionBgColor;
             box-sizing: content-box;
             z-index: 100;
             &-packs{
                 position: absolute;
                 bottom: 0;
-                height: @emotionBarHeight*@sizeRatio;
+                height: @emotionBarHeight;
                 background: @emotionBarBgColor;
                 width: 100%;
                 white-space: nowrap;
                 li{
-                    width: @emotionBarItemWidth*@sizeRatio;
-                    height: @emotionBarHeight*@sizeRatio;
+                    width: @emotionBarItemWidth;
+                    height: @emotionBarHeight;
                     display: inline-block;
                     text-align: center;
                     position: relative;
                     float: left;
                     img{
                         position: absolute;
-                        left: (@emotionBarItemWidth - @smallIconSize)/2*@sizeRatio;
-                        top: (@emotionBarHeight - @smallIconSize)/2*@sizeRatio;
-                        width: @smallIconSize*@sizeRatio;
-                        height: @smallIconSize*@sizeRatio;
+                        left: (@emotionBarItemWidth - @smallIconSize)/2;
+                        top: (@emotionBarHeight - @smallIconSize)/2;
+                        width: @smallIconSize;
+                        height: @smallIconSize;
                     }
                     &.active{
                         background: @emotionBarItemActiveBgColor;
@@ -110,57 +109,64 @@
                 display: block;
                 width: 0;
                 height: 0;
-                border-right: 12px*@sizeRatio solid transparent;
+                border-right: 12px solid transparent;
                 content: "";
                 position: absolute;
-                bottom: -13px*@sizeRatio;
-                left: 14px*@sizeRatio;
-                border-top: 12px*@sizeRatio solid #f3f3f4;
+                bottom: -13px;
+                left: 14px;
+                border-top: 12px solid #f3f3f4;
+            }
+            &-wrap{
+                position: absolute;
+                left: @containerWrapMargin;
+                top: @containerWrapMargin;
+                right: @containerWrapMargin;
+                bottom: @containerWrapMargin;
             }
         }
-        &-small{
-            width: @emotionSmallSize*@sizeRatio;
-            height: @emotionSmallSize*@sizeRatio;
+        &-item{
+            width: @emotionItemSize;
+            height: @emotionItemSize;
             float: left;
-            cursor: default;
+            cursor: pointer;
             text-align: center;
-            line-height: @emotionSmallSize*@sizeRatio;
+            line-height: @emotionItemSize;
             position: relative;
             img{
                 position: absolute;
-                left: (@emotionSmallSize - @smallIconSize)/2*@sizeRatio;
-                top: (@emotionSmallSize - @smallIconSize)/2*@sizeRatio;
-                width: @smallIconSize*@sizeRatio;
-                height: @smallIconSize*@sizeRatio;
+                left: (@emotionItemSize - @smallIconSize)/2;
+                top: (@emotionItemSize - @smallIconSize)/2;
+                width: @smallIconSize;
+                height: @smallIconSize;
             }
             &:after{
                 clear: both;
             }
             &:hover{
-                background: #F3F3F4;
+                background: rgba(64,214,136,.2);
             }
             &:active{
-                background: #F3F3F4;
+                background: rgba(64,214,136,.2);
             }
         }
     }
     &-input{
         position: absolute;
-        left:(@_left + @emotionIconSize + @inputSpacing)*@sizeRatio;
-        height: @inputHeight*@sizeRatio!important;
-        top: (@height - @inputHeight)/2*@sizeRatio;
-        right: (@sendWidth + @_left + @inputSpacing)*@sizeRatio;
+        left:(@_left + @emotionIconSize + @inputSpacing);
+        height: @inputHeight!important;
+        top: (@height - @inputHeight)/2;
+        right: (@sendWidth + @_left + @inputSpacing);
         outline: none;
         box-sizing: border-box;
         input{
             display: block;
             width: 100%!important;
-            height: @inputHeight*@sizeRatio!important;
+            height: @inputHeight!important;
             padding: @inputPadding;
             color: @inputColor;
-            font-size: @inputFontSize*@sizeRatio;
-            line-height: @inputHeight*@sizeRatio;
-            border: @inputBorderSize*@sizeRatio solid @inputBorderColor;
+            font-size: @inputFontSize;
+            line-height: @inputHeight;
+            border: @inputBorderSize solid @inputBorderColor;
             outline: none;
             &:focus{
                 border-color: @inputBorderActiveColor!important;
@@ -170,27 +176,27 @@
         white-space: nowrap;
         overflow: hidden;
         &-icon{
-            width: @smallIconSize*@sizeRatio;
-            height: @smallIconSize*@sizeRatio;
+            width: @smallIconSize;
+            height: @smallIconSize;
             margin: 0 1px;
             position: relative;
-            top: 5px*@sizeRatio;
+            top: 5px;
         }
     }
     &-send{
-        width: @sendWidth*@sizeRatio;
-        height: @sendHeight*@sizeRatio;
-        font-size: @sendFontSize*@sizeRatio;
+        width: @sendWidth;
+        height: @sendHeight;
+        font-size: @sendFontSize;
         color: @sendColor;
         box-sizing: border-box;
         position: absolute;
-        right: @_left*@sizeRatio;
-        top: ((@height - @sendHeight)/2)*@sizeRatio;
+        right: @_left;
+        top: ((@height - @sendHeight)/2);
         border: none;
         outline: none;
         line-height: 1;
         cursor: pointer;
-        border-radius: @sendRadius*@sizeRatio;
+        border-radius: @sendRadius;
         background-color: transparent;
     }
 }

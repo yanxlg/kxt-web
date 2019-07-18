@@ -7,6 +7,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "react-custom-scroll/dist/customScroll.css";
 import ChatBox from '../src/chatbox';
+import "./index.css";
 
 
 class Test extends React.Component<{},{}>{

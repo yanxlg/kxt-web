@@ -257,19 +257,22 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
                 {
                     showEmotion?(
                         <div className="chatbox-emotion-container" ref={(ref:any)=>this.emotionContainer=ref}>
-                            <Scrollbar>
-                                {
-                                    (emotion_active.images||[]).map((image:any,index:number)=>{
-                                        const path=image.path;
-                                        return  (
-                                            <div className="chatbox-emotion-small" title={image.name} onClick={this.selectEmotion.bind(this,image.name,path,emotion_active.type)}>
-                                                <img src={path}/>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </Scrollbar>
-                            <div className="chatbox-emotion-container-packs">
+                            <div className="chatbox-emotion-container-wrap">
+                                <Scrollbar>
+                                    {
+                                        (emotion_active.images||[]).map((image:any,index:number)=>{
+                                            const path=image.path;
+                                            return  (
+                                                <div className="chatbox-emotion-item" title={image.name} onClick={this.selectEmotion.bind(this,image.name,path,emotion_active.type)}>
+                                                    <img src={path}/>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </Scrollbar>
+                            </div>
+                         
+                        {/*    <div className="chatbox-emotion-container-packs">
                                 <Scrollbar>
                                     {
                                         emotions.map((emotion:any,index:number)=>{
@@ -281,7 +284,7 @@ class ChatBox extends React.Component<ChatBoxProps,ChatBoxState>{
                                         })
                                     }
                                 </Scrollbar>
-                            </div>
+                            </div>*/}
                         </div>
                     ):null
                 }
