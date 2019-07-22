@@ -17,6 +17,7 @@ declare interface IScrollbarProps extends ScrollbarProps{
     hide?:boolean;
     hideX?:boolean;
     hideY?:boolean;
+    scrollBounce?:boolean;
 }
 
 
@@ -52,7 +53,7 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
             <div className={"rs__thumb-x"} {...props}/>
         );
     }
-    constructor(props:ScrollbarProps){
+    constructor(props:IScrollbarProps){
         super(props);
         this.horizonSpringSystem = new SpringSystem();
         this.verticalSpringSystem = new SpringSystem();
@@ -83,6 +84,8 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
     public scrollTop(top: number,animation?:boolean){
         if (animation) {
             const scrollTop = this.getScrollTop();
+            const {scrollBounce} = this.props;
+            !scrollBounce&&this.verticalSpring.setOvershootClampingEnabled(false);
             this.verticalSpring.setCurrentValue(scrollTop).setAtRest();
             this.verticalSpring.setEndValue(top);
         } else {
@@ -93,6 +96,8 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
     public scrollLeft(left: number,animation?:boolean){
         if (animation) {
             const scrollLeft = this.getScrollLeft();
+            const {scrollBounce} = this.props;
+            !scrollBounce&&this.horizonSpring.setOvershootClampingEnabled(false);
             this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
             this.horizonSpring.setEndValue(left);
         } else {

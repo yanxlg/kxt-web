@@ -12,7 +12,7 @@ import {positionValues} from "react-custom-scrollbars";
 interface IRecyclerListViewProps<T> {
     drawCount:number;// 显示数量
     dataList:T[];
-    children:(key:string,data:T)=>ReactNode;// 一定需要key绑定
+    children:(key:number,data:T)=>ReactNode;// 一定需要key绑定
     onScroll?: React.UIEventHandler<any>;
     onScrollFrame?: (values: positionValues) => void;
     onScrollStart?: () => void;
