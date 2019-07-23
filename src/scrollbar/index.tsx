@@ -17,7 +17,7 @@ declare interface IScrollbarProps extends ScrollbarProps{
     hide?:boolean;
     hideX?:boolean;
     hideY?:boolean;
-    scrollBounce?:boolean;
+    overshootClamping?:boolean;// 是否支持弹动动画
 }
 
 
@@ -84,8 +84,8 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
     public scrollTop(top: number,animation?:boolean){
         if (animation) {
             const scrollTop = this.getScrollTop();
-            const {scrollBounce} = this.props;
-            !scrollBounce&&this.verticalSpring.setOvershootClampingEnabled(false);
+            const {overshootClamping} = this.props;
+            !overshootClamping&&this.verticalSpring.setOvershootClampingEnabled(true);
             this.verticalSpring.setCurrentValue(scrollTop).setAtRest();
             this.verticalSpring.setEndValue(top);
         } else {
@@ -96,8 +96,8 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
     public scrollLeft(left: number,animation?:boolean){
         if (animation) {
             const scrollLeft = this.getScrollLeft();
-            const {scrollBounce} = this.props;
-            !scrollBounce&&this.horizonSpring.setOvershootClampingEnabled(false);
+            const {overshootClamping} = this.props;
+            !overshootClamping&&this.horizonSpring.setOvershootClampingEnabled(true);
             this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
             this.horizonSpring.setEndValue(left);
         } else {
@@ -183,6 +183,7 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
         this.horizonSpringSystem = undefined;
         this.horizonSpring.destroy();
         this.horizonSpring = undefined;
+        
         this.verticalSpringSystem.deregisterSpring(this.verticalSpring);
         this.verticalSpringSystem.removeAllListeners();
         this.verticalSpringSystem = undefined;
