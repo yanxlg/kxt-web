@@ -85,7 +85,7 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
         if (animation) {
             const scrollTop = this.getScrollTop();
             const {overshootClamping} = this.props;
-            !overshootClamping&&this.verticalSpring.setOvershootClampingEnabled(true);
+            overshootClamping&&this.verticalSpring.setOvershootClampingEnabled(true);
             this.verticalSpring.setCurrentValue(scrollTop).setAtRest();
             this.verticalSpring.setEndValue(top);
         } else {
@@ -97,7 +97,7 @@ class Scrollbar extends React.PureComponent<IScrollbarProps,IScrollbarState>{
         if (animation) {
             const scrollLeft = this.getScrollLeft();
             const {overshootClamping} = this.props;
-            !overshootClamping&&this.horizonSpring.setOvershootClampingEnabled(true);
+            overshootClamping&&this.horizonSpring.setOvershootClampingEnabled(true);
             this.horizonSpring.setCurrentValue(scrollLeft).setAtRest();
             this.horizonSpring.setEndValue(left);
         } else {
